@@ -1,0 +1,87 @@
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@color/basecolor"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@color/white"
+        android:orientation="vertical" >
+        <!-- 用户信息区 -->
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" >
+           
+           <!-- 头像 -->
+	     <de.hdodenhof.circleimageview.CircleImageView
+	            xmlns:app="http://schemas.android.com/apk/res-auto"
+	            android:id="@+id/listitem_msg_comment_usercover"
+	            android:clickable="true"
+	            android:layout_alignParentLeft="true"
+				android:layout_width="42dp"
+				android:layout_height="42dp"
+				app:border_width="0dp" />
+	     
+	     <ImageView
+	         android:id="@+id/listitem_msg_comment_storyimage"
+	         android:layout_width="42dp"
+	         android:layout_height="42dp"
+	         android:clickable="true"
+	         android:scaleType="centerCrop"
+	         android:layout_alignParentRight="true" />
+	     
+	     <LinearLayout
+	         android:layout_width="match_parent"
+	         android:layout_height="47dp"
+	         android:layout_toRightOf="@id/listitem_msg_comment_usercover"
+	         android:layout_toLeftOf="@id/listitem_msg_comment_storyimage"
+	         android:gravity="center_vertical"
+	         android:orientation="vertical" >
+	         
+	         <TextView
+	             android:id="@+id/listitem_msg_comment_username"
+	             android:layout_width="wrap_content"
+	             android:layout_height="wrap_content"
+	             android:padding="2dp"
+	             android:text="m90chwo" />
+	         
+	         <TextView
+	             android:id="@+id/listitem_msg_comment_msgtypestr"
+	             android:layout_width="wrap_content"
+	             android:layout_height="wrap_content"
+	             android:padding="2dp"
+	             android:text="评论  你的故事" />
+	         
+	     </LinearLayout>
+           
+       </RelativeLayout><!-- 用户信息区结束 -->
+       <!-- 内容区 -->
+      <TextView
+          android:id="@+id/listitem_msg_comment_content"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:clickable="true"
+          android:layout_marginTop="5dp"
+          android:padding="8dp"
+          android:text="费城好"
+          android:background="@color/basecolor" />
+      <!-- 时间显示 -->
+      <TextView
+          android:id="@+id/listitem_msg_comment_time"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="5dp"
+          android:padding="5dp"
+          android:layout_gravity="right"
+          android:textSize="10sp"
+          android:text="2015-05-01 11:11:11"
+          android:textColor="@color/grey_light" />
+        
+    </LinearLayout>
+    
+</RelativeLayout>

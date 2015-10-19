@@ -1,0 +1,83 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    android:orientation="vertical"
+    android:background="@color/white" xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <ScrollView
+        android:id="@+id/activity_community_createtheme_rootscrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    <EditText 
+        android:id="@+id/activity_community_createtheme_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:background="@null"
+        android:hint="标题"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/Gainsboro" />
+    
+    <!-- <EditText 
+         android:id="@+id/activity_community_createtheme_content"
+         android:layout_width="match_parent"
+         android:layout_height="250dp"
+         android:paddingTop="10dp"
+         android:paddingBottom="10dp"
+         android:gravity="top"
+         android:singleLine="false"
+         android:background="@null"
+         android:hint="内容"
+         /> -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+     <com.putaotown.views.BCEditText 
+         android:id="@+id/activity_community_createtheme_content"
+         android:layout_width="match_parent"
+         android:layout_height="189dp"
+         android:scrollbars="vertical"
+         android:paddingTop="10dp"
+		 android:paddingBottom="10dp"
+         android:gravity="top"
+         android:singleLine="false"
+         android:background="@null"
+         android:hint="说点什么吧"/>
+     <include layout="@layout/markdown_layout_toolbar"
+	   android:id="@+id/BottomToolbar"
+	   android:layout_width="match_parent"
+	   android:layout_height="wrap_content"
+	   android:layout_gravity="bottom"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/Gainsboro" />
+    
+    <LinearLayout
+        android:id="@+id/activity_community_images"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#fff"
+        android:orientation="vertical" />
+    
+    </LinearLayout>
+    
+    </ScrollView>
+    
+</LinearLayout>

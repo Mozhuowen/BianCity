@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+    <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="#fff3f3f3"
+        >
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_navigation_back_normal"
+            android:onClick="backEvent"
+            />
+        <TextView 
+            android:id="@+id/activity_messboard_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确认地理信息"
+            android:textSize="20sp"
+            android:textColor="#82858b"
+            android:layout_gravity="center_horizontal|center_vertical" 
+            />
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:src="@drawable/ic_note_complete_normal"
+            android:onClick="ok"
+            />
+    </FrameLayout>
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="1px"
+    android:background="#ff5b5148" />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        >
+        
+        <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                 >
+            <TableRow >
+	            <TextView 
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:gravity="center_horizontal"
+	                android:text="东经"
+	                />
+	            <TextView 
+	                android:id="@+id/activity_getcoordinate_longitude"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:text="正在获取..."
+	                />
+       		</TableRow>
+       		<TableRow >
+            <TextView                
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="北纬"
+                />
+            <TextView 
+                android:id="@+id/activity_getcoordinate_latitude"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="正在获取..."
+                />
+            </TableRow>
+            <TextView 
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="请确认你的地理信息是否和以下百度地图上显示的一致"
+                />
+        </TableLayout>
+        
+        <LinearLayout
+	 	    android:id="@+id/activity_getcoordinate_mapview"
+	 	    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+		    android:orientation="vertical"
+	 	    />
+        
+    </LinearLayout>
+    
+</LinearLayout>

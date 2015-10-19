@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/basecolor">
+    <!-- 我的属性区 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:background="@color/white"
+        android:orientation="vertical" >
+        
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@color/basecolor" >
+            <ImageView
+                android:id="@+id/view_user_maincontent_wall"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/wall"
+                android:scaleType="centerCrop" />
+            
+            <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                android:gravity="center_horizontal|center_vertical" >
+                
+                <TextView
+                    android:id="@+id/view_user_maincontent_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:text="Awen"
+                    android:layout_marginBottom="20dp" />
+                
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/view_user_maincontent_cover"
+				    android:layout_width="52dp"
+				    android:layout_height="52dp"
+				    app:border_width="2dp"
+				    app:border_color="#FFFFFFFF"/>
+                <LinearLayout
+                    android:layout_width="120dp"
+                    android:layout_height="30dp"
+                    android:padding="2dp"
+                    android:gravity="center_vertical|center_horizontal" >
+                    
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:layout_weight="1" >
+	                    <TextView
+	                        android:id="@+id/view_user_maincontent_usersex"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:padding="2dp"
+	                        android:textSize="10sp"
+	                        android:textColor="@color/white"
+	                        android:drawableLeft="@drawable/ic_sex_girl"
+	                        android:text="女" />
+                    </LinearLayout>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/divider_bg" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:layout_weight="1" >
+	                    <TextView
+	                        android:id="@+id/view_user_maincontent_userlocation"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:padding="2dp"
+	                        android:textSize="10sp"
+	                        android:textColor="@color/white"
+	                        android:drawableLeft="@drawable/ic_location_small"
+	                        android:text="海外" />
+                	</LinearLayout>
+            </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+        <!-- 数据区 -->
+      	<TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="*"
+            android:gravity="center_vertical|center_horizontal" >
+            <TableRow >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="vertical"
+                android:gravity="center_vertical|center_horizontal" >
+               <TextView
+                   android:id="@+id/view_user_maincontent_towncount"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:padding="2dp"
+                   android:text="10" />
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:padding="2dp"
+                   android:text="@string/user_biancity" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="vertical"
+                android:gravity="center_vertical|center_horizontal" >
+               <TextView
+                   android:id="@+id/view_user_maincontent_putaocount"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:padding="2dp"
+                   android:text="10" />
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:padding="2dp"
+                   android:text="@string/user_story" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="vertical"
+                android:gravity="center_vertical|center_horizontal" >
+               <TextView
+                   android:id="@+id/view_user_maincontent_fanscount"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:padding="2dp"
+                   android:text="10" />
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:padding="2dp"
+                   android:text="@string/user_fans_f" />
+               
+            </LinearLayout>         
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="vertical"
+                android:gravity="center_vertical|center_horizontal" >
+               <TextView
+                   android:id="@+id/view_user_maincontent_subscicount"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:padding="2dp"
+                   android:text="10" />
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:padding="2dp"
+                   android:text="@string/user_subs" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="vertical"
+                android:gravity="center_vertical|center_horizontal" >
+               <TextView
+                   android:id="@+id/view_user_maincontent_favoritecount"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:padding="2dp"
+                   android:text="10" />
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:padding="2dp"
+                   android:text="@string/user_favorite" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="vertical"
+                android:gravity="center_vertical|center_horizontal" >
+               <TextView
+                   android:id="@+id/view_user_maincontent_bbscount"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:padding="2dp"
+                   android:text="10" />
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:padding="2dp"
+                   android:text="@string/user_community" />
+            </LinearLayout>
+            </TableRow>
+        </TableLayout>
+        
+    </LinearLayout> 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/basecolor" />
+    <RelativeLayout
+        android:id="@+id/view_user_maincontent_hint"
+	    android:layout_width="match_parent"
+	    android:layout_height="300dp"
+	    android:background="@null"
+	    android:padding="5dp"
+	    android:gravity="center_vertical|center_horizontal">
+	    <TextView       
+	       android:layout_width="match_parent"
+	       android:layout_height="match_parent"
+	       android:text="@string/putao_nohint"
+	       android:textColor="@color/Gainsboro"
+	       android:gravity="center_horizontal|center_vertical" />
+	</RelativeLayout>
+</LinearLayout>

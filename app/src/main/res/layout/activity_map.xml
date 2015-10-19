@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/basecolor"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    android:orientation="vertical" >
+    <!-- <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@color/basecolor"
+        >
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_navigation_back_normal"
+            android:onClick="backEvent"
+            />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看地图"
+            android:textSize="20sp"
+            android:textColor="#82858b"
+            android:layout_gravity="center_horizontal|center_vertical" 
+            />
+    </FrameLayout> -->
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        >        
+        
+        <TextView
+            android:id="@+id/activity_map_mylocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="@color/Gainsboro"
+            android:padding="5dp"
+            android:background="@drawable/corners_bg"
+            android:text="定位到我当前位置" />
+        
+        <com.amap.api.maps2d.MapView
+	        android:id="@+id/activity_map_mapview"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp" >
+    	</com.amap.api.maps2d.MapView>
+        
+    </LinearLayout>
+    
+</LinearLayout>

@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    android:background="@color/basecolor" >
+    
+    <!-- <RelativeLayout
+        android:id="@+id/activity_draft_titlebar" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+	    <FrameLayout       
+	        android:layout_width="match_parent"
+	        android:layout_height="42dp"
+	        android:gravity="center_vertical"
+	        android:background="@color/basecolor"
+	        >
+	        <ImageView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_vertical"
+	            android:onClick="backEvent"
+	            android:src="@drawable/ic_navigation_back_normal" />
+	        <TextView 
+	            android:id="@+id/activity_draft_title"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textColor="#82858b"
+	            android:textSize="20sp"
+	            android:text="草稿箱"
+	            android:textStyle="bold"
+	            android:layout_gravity="center_horizontal|center_vertical" 
+	            />
+	    </FrameLayout>
+    </RelativeLayout> -->
+    
+    <me.maxwin.view.XListView
+        android:id="@+id/activity_draft_xlistview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:background="@color/white"
+        android:divider="@null">
+    </me.maxwin.view.XListView>
+
+    
+
+</RelativeLayout>

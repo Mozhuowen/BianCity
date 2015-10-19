@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:context="com.putaotown.MainActivity"
+    xmlns:tools="http://schemas.android.com/tools">
+    
+    <item
+        android:id="@+id/actionbar_ok"
+        android:icon="@drawable/iconfont_correct"
+        android:title="创建" />
+
+</menu>

@@ -1,0 +1,52 @@
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <ImageView
+        android:id="@+id/activity_welcome_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/welcom"
+        android:scaleType="centerCrop" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:gravity="center_horizontal|center_vertical" >
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="小城"
+            android:textSize="25sp"
+            android:textColor="@color/white" />
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:padding="10dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_gravity="bottom" >
+        
+        <ImageView
+            android:id="@+id/activity_welcome_login_sina"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:src="@drawable/btn_login_sina_normal" />
+        
+        <ImageView
+            android:id="@+id/activity_welcome_login_qq"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:src="@drawable/btn_login_qq_normal" />
+        
+    </LinearLayout>
+</FrameLayout>

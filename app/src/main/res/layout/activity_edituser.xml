@@ -1,0 +1,155 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/basecolor"
+    android:orientation="vertical" >
+    
+    <!-- <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@color/basecolor"
+        >
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_navigation_back_normal"
+            android:onClick="backEvent"
+            />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="编辑资料"
+            android:textSize="20sp"
+            android:textColor="#82858b"
+            android:layout_gravity="center_horizontal|center_vertical" 
+            />
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:src="@drawable/ic_note_complete_normal"
+            android:onClick="ok"
+            />
+    </FrameLayout> -->
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grey_light" />
+    
+    <RelativeLayout
+        android:id="@+id/activity_edituser_ccover"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+        
+       <!-- 头像 -->
+    <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/activity_edituser_usercover"
+            android:layout_alignParentLeft="true"
+			android:layout_width="42dp"
+			android:layout_height="42dp"
+			app:border_width="0dp" />
+    
+    <TextView
+        android:id="@+id/activity_setting_username"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/activity_edituser_usercover"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/grey_light"
+        android:text="点击修改头像"
+        android:drawableRight="@drawable/ic_detail_small"
+        android:gravity="center_vertical" />
+    </RelativeLayout> 
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/activity_edituser_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="呢称" />   
+        
+    <EditText 
+        android:id="@+id/activity_edituser_username"
+        android:layout_below="@id/activity_edituser_name"
+        android:layout_width="match_parent"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:layout_height="35dp"
+        android:textSize="14sp"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:text="moawen"
+        />
+    
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical" >
+    
+    <TextView
+        android:id="@+id/activity_edituser_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="所在地" />   
+        
+    <EditText 
+        android:id="@+id/activity_edituser_locationtext"
+        android:layout_below="@id/activity_edituser_location"
+        android:layout_width="match_parent"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:layout_height="35dp"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:textSize="14sp"
+        android:text="北京"
+        />
+    
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/activity_edituser_usersex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal"
+        android:padding="5dp" >
+    
+    <TextView 
+        android:id="@+id/activity_edituser_sextitle"      
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="性别" />
+    
+    <TextView
+        android:id="@+id/activity_edituser_sextext"
+        android:layout_toRightOf="@id/activity_edituser_sextitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:drawableRight="@drawable/ic_detail_small"
+        android:text="男" />
+    
+    </RelativeLayout>
+    
+</LinearLayout>

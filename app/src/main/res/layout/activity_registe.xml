@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff3f3f3"
+    android:orientation="vertical" >
+    <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="#fff3f3f3"
+        >
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_navigation_back_normal"
+            android:onClick="backEvent"
+            />
+        <TextView 
+            android:id="@+id/activity_registe_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册"
+            android:textSize="20sp"
+            android:textColor="#82858b"
+            android:layout_gravity="center_horizontal|center_vertical" 
+            />
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:src="@drawable/ic_note_complete_normal"
+            android:onClick="ok"
+            />
+    </FrameLayout>
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="1px"
+    android:background="#ff5b5148" />
+    
+   <ScrollView 
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:background="#fff"
+       >
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onChoseImage"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:background="#fff"
+            >
+            <LinearLayout 
+                android:id="@+id/activity_registe_picture"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/corners_bg"
+                android:gravity="center_horizontal|center_vertical"
+                >
+                <TextView 
+                    android:id="@+id/activity_registe_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="选择照片"
+                    />
+            </LinearLayout>
+            
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:stretchColumns="1"
+                 >
+            	<TableRow >
+            	    <TextView 
+            	        android:layout_height="wrap_content"
+            	        android:text="Email:" />
+            	    <EditText 
+            	        android:id="@+id/activity_registe_email"
+            	        android:layout_height="wrap_content"
+            	        android:inputType="textMultiLine|textNoSuggestions"
+            	        android:hint="用于找回密码的email"/>
+            	</TableRow>
+            	<TableRow >
+            	    <TextView 
+            	        android:layout_height="wrap_content"
+            	        android:text="用户名:" />
+            	    <EditText 
+            	        android:id="@+id/activity_registe_name"
+            	        android:layout_height="wrap_content"
+            	        android:inputType="textMultiLine|textNoSuggestions"
+            	        android:hint="请输入用户名"/>
+            	</TableRow>
+            	<TableRow >
+            	    <TextView 
+            	        android:layout_height="wrap_content"
+            	        android:text="密码:" />
+            	    <EditText 
+            	        android:id="@+id/activity_registe_password"
+            	        android:layout_height="wrap_content"
+            	        android:inputType="textMultiLine|textNoSuggestions"
+            	        android:hint="密码"/>
+            	</TableRow>
+            	<TableRow >
+            	    <TextView 
+            	        android:layout_height="wrap_content"
+            	        android:text="重复密码:" />
+            	    <EditText 
+            	        android:id="@+id/activity_registe_repassword"
+            	        android:layout_height="wrap_content"
+            	        android:inputType="textMultiLine|textNoSuggestions"
+            	        android:hint="重复密码"/>
+            	</TableRow>
+            </TableLayout>
+           
+        </LinearLayout>
+        
+     </ScrollView>   
+</LinearLayout>

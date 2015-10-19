@@ -1,0 +1,96 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp"
+    android:paddingRight="10dp"
+    android:orientation="vertical"
+     xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         >
+        
+        <ImageView
+            android:id="@+id/listitem_community_header_coverimage"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:scaleType="centerCrop"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/wall" />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/listitem_community_header_coverimage"
+            android:orientation="vertical" >
+            
+            <TextView
+                android:id="@+id/listitem_community_header_cname"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:maxLines="2"
+                android:lines="2"
+                android:textColor="@color/grey_light"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:text="" />
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+                <TextView
+                    android:id="@+id/listitem_community_header_membercount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:text="成员： 123" />
+                <TextView                    
+                    android:id="@+id/listitem_community_header_tiecount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="16sp"
+                    android:text="帖子： 123" />
+            </LinearLayout>
+            
+            <TextView
+                android:id="@+id/listitem_community_header_btnjoin"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:layout_marginTop="10dp"
+                android:background="@color/blue_bg_selector"
+                android:text="加入"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:textStyle="bold" />            
+        </LinearLayout>      
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/listitem_community_header_toptie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+        <View
+	        android:layout_width="match_parent"
+	        android:layout_height="1px"
+	        android:layout_marginTop="10dp"
+	        android:background="@color/Gainsboro" />
+        
+    </LinearLayout>
+    
+</LinearLayout>

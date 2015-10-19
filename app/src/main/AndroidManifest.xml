@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.putaotown"
+    android:versionCode="17"
+    android:versionName="0.3.1" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="23" />
+    
+    <!-- baiuMap权限 -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />  
+	<uses-permission android:name="android.permission.USE_CREDENTIALS" />  
+	<uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />  
+	<uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />  
+	<uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+	<uses-permission android:name="android.permission.BROADCAST_STICKY" />
+	<uses-permission android:name="android.permission.WRITE_SETTINGS" />  
+	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<!-- 百度定位权限 -->
+	<!-- 这个权限用于进行网络定位-->
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+	<!-- 这个权限用于访问GPS定位-->
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+	<!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位-->
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+	<!-- 获取运营商信息，用于支持提供运营商信息相关的接口-->
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+	<!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据-->
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<!-- 访问网络，网络定位需要上网-->
+	<uses-permission android:name="android.permission.INTERNET" />
+	<!-- SD卡读取权限，用户写入离线定位数据-->
+	<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+	<!--允许应用读取低级别的系统日志文件 -->
+	<uses-permission android:name="android.permission.READ_LOGS"/>
+	
+	<!-- 小米推送权限 -->
+	<uses-permission android:name="android.permission.GET_TASKS" />
+	<!-- the following 2 com.xiaomi.mipushdemo should be changed to your package name -->
+    <permission
+        android:name="com.putaotown.permission.MIPUSH_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.putaotown.permission.MIPUSH_RECEIVE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name="com.putaotown.PutaoApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:hardwareAccelerated="true">
+       <!-- release amap key: 273687bd95b725f6eba649fd6fd7670e -->
+       <!-- debug amap key: 3ab83c2396f02de84a4ffb81ec93999c -->
+       <!-- debug mac-amap key:ae1ec077756d5076f98f4adde04dbc98 -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="273687bd95b725f6eba649fd6fd7670e" />
+        <service 
+		    android:name="com.putaotown.update.UpdateService" >
+		</service>
+        <activity
+			android:name="com.tencent.tauth.AuthActivity" 
+			android:screenOrientation="portrait"
+			android:noHistory="true" 
+			android:launchMode="singleTask" >
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+				<category android:name="android.intent.category.BROWSABLE" />
+				<data android:scheme="tencent1104330483" />
+			</intent-filter>
+		</activity>
+		<activity 
+		    android:name="com.tencent.connect.common.AssistActivity"
+		    android:screenOrientation="portrait"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar"
+			android:configChanges="orientation|keyboardHidden|screenSize" 
+			/>
+        <activity
+            android:name=".WelcomeActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/biancity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name"
+            android:theme="@style/BCNoTitleTheme" >
+        </activity>
+        <activity
+            android:name=".TownActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name=".PutaoActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name"
+            android:theme="@style/AppBaseTheme" >
+        </activity>
+        <activity
+            android:name=".MessBoard"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".AttentionActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".CollectActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".MytownActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".CreateTownActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/actionbar_createtown"
+            android:theme="@style/AppBaseTheme" >
+        </activity>
+        <activity
+            android:name=".GetCoordinateActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name"
+            android:theme="@style/AppBaseTheme" >
+        </activity>
+        <activity
+            android:name=".RegisteActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" 
+            android:theme="@style/AppBaseTheme">
+        </activity>
+        <activity
+            android:name=".UserActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" 
+            android:theme="@style/BCNoTitleTheme">
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" 
+            android:theme="@style/AppBaseTheme">
+        </activity>
+        <activity
+            android:name=".EditTownActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" 
+            android:theme="@style/AppBaseTheme">
+        </activity>
+        <activity
+            android:name=".CreatePutaoActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" 
+            android:theme="@style/AppBaseTheme">
+        </activity>
+         <activity
+            android:name="com.putaotown.imageviewer.ImagePagerActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/imageviewer" 
+            android:theme="@style/AppBaseTheme">
+        </activity>
+        <activity
+            android:name=".PutaoxActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/actionbar_story" 
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".CNameActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" 
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".GetGeoActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/actionbar_vertify_position" 
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".VerifyGeoActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/actionbar_vertify_address" 
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".MapActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/actionbar_map" 
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".MessboardActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" 
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".TestActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" 
+            android:theme="@style/AppBaseTheme">
+        </activity>
+        <activity
+            android:name=".SublistActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/subscribe" 
+            android:theme="@style/AppBaseTheme">
+        </activity>
+        <activity
+            android:name=".FavolistActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/favorite" 
+            android:theme="@style/AppBaseTheme">
+        </activity>
+        <activity
+            android:name=".SettingActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" 
+            android:theme="@style/AppBaseTheme">
+        </activity>
+        <activity
+            android:name=".EditUserActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/actionbar_editprofile" 
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".DraftActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/actionbar_draft" 
+            android:theme="@style/AppBaseTheme">
+        </activity>
+        <activity
+            android:name=".AboutActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/actionbar_about" 
+            android:theme="@style/AppBaseTheme">
+        </activity>
+        <activity
+            android:name=".FAQActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/actionbar_qa" 
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".MsgShowActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/actionbar_msgcomment" 
+            android:theme="@style/AppBaseTheme">
+        </activity>
+        <activity
+            android:name=".MsgShowGoodActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/actionbar_msggoogd" 
+            android:theme="@style/AppBaseTheme">
+        </activity>
+        <activity
+            android:name=".MsgShowSysActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/actionbar_msgsys" 
+            android:theme="@style/AppBaseTheme">
+        </activity>
+        <activity
+            android:name="com.putaotown.community.Community"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" 
+            android:theme="@style/AppBaseTheme">
+        </activity>
+        <activity
+            android:name="com.putaotown.community.NewThemeActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/actionbar_newtheme" 
+            android:theme="@style/AppBaseTheme">
+        </activity>
+        <activity
+            android:name="com.putaotown.community.ThemeTieActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/actionbar_tiezi" 
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name="com.putaotown.community.ReplyTieActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" 
+            android:theme="@style/AppBaseTheme">
+        </activity>
+        <activity
+            android:name=".CommunitylistActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/community" 
+            android:theme="@style/AppBaseTheme">
+        </activity>
+        <activity
+            android:name=".MsgShowBBSActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/acitonbar_msgbbs" 
+            android:theme="@style/AppBaseTheme">
+        </activity>
+        <activity
+            android:name=".searchActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" 
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name=".MyTownsListActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/mycity" 
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name="com.putaotown.markdown.PreViewActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/actionbar_preview" 
+            android:theme="@style/AppTheme">
+        </activity>
+        
+        <!-- 微博相关 -->
+         <!-- 必须注册在微博授权，分享微博时候用到 -->
+        <activity android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser" 
+            android:configChanges="keyboardHidden|orientation"
+            android:windowSoftInputMode="adjustResize"
+            android:exported="false" >
+        </activity>
+        <service android:name="com.sina.weibo.sdk.net.DownloadService"
+            android:exported="false"/>
+        
+        <!-- 小米推送 -->
+        <service
+            android:name="com.xiaomi.push.service.XMPushService"
+            android:enabled="true"
+            android:process=":pushservice" />
+        <service
+            android:name="com.xiaomi.mipush.sdk.PushMessageHandler"
+            android:enabled="true"
+            android:exported="true" />
+        <service android:enabled="true"
+            android:name="com.xiaomi.mipush.sdk.MessageHandleService" />
+
+        <receiver
+            android:name="com.putaotown.mipush.MyPushMessageReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.ERROR" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.xiaomi.push.service.receivers.PingReceiver"
+            android:exported="false"
+            android:process=":pushservice" >
+            <intent-filter>
+                <action android:name="com.xiaomi.push.PING_TIMER" />
+            </intent-filter>
+        </receiver>
+        
+       <!-- photo seletor -->
+       <activity
+            android:name="com.photoselector.ui.PhotoSelectorActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/biancity" >
+        </activity>
+        <activity
+            android:name="com.photoselector.ui.PhotoPreviewActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/biancity" >
+        </activity>
+
+    </application>
+    
+    
+
+</manifest>

@@ -1,0 +1,264 @@
+<!-- 上部总介绍区 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <!-- <ImageView
+        android:id="@+id/view_town_maincontent_cover"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:scaleType="centerCrop" /> -->
+        <ImageView
+        android:id="@+id/view_town_maincontent_cover"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:scaleType="centerCrop" />
+
+    <!-- 文字介绍区 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <!-- 标题文子区 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/view_town_maincontent_towname"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="葡萄小镇"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/view_town_maincontent_good"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/grey_light"
+                android:gravity="center_vertical"
+                android:text="0" />
+            <ImageView
+                android:id="@+id/view_town_maincontent_good_image"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:src="@drawable/ic_list_thumb"/>
+
+        </LinearLayout>
+        <!-- 简介 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/view_town_maincontent_description"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="简介： 欢迎来到我的葡萄小镇"
+                android:textColor="#82858b"
+                android:textSize="10sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 属性信息区 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:orientation="vertical"
+            android:padding="5sp" >
+
+            <!-- 创建者层 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/view_town_maincontent_usercover"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="39dp"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="5dp"
+                    android:onClick="openUser"
+                    app:border_color="#FFFFFFFF"
+                    app:border_width="1dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/view_town_maincontent_username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/grey_light" />
+
+                    <TextView
+                        android:id="@+id/view_town_maincontent_fans"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/grey_light" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="5dp"
+                android:background="@color/grey_light" /> -->
+            <!-- 地址信息层 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="33dp"
+                    android:layout_height="33dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/iconfont_position"/>
+
+                <TextView
+                    android:id="@+id/view_town_maincontent_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:lines="2"
+                    android:ellipsize="end"
+                    android:text="广东省广州市葡萄小镇"
+                    android:textColor="@color/grey_light" />
+            </LinearLayout>
+
+           <!--  <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="5dp"
+                android:background="@color/grey_light" /> -->
+            <!-- 订阅留言层 -->
+
+           <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:gravity="center_vertical|center_horizontal" >
+                    <TextView
+                        android:id="@+id/view_town_maincontent_subscribe"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/main_bar_iconblue"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:background="@color/corner_selector"
+                        android:text="订阅" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_margin="2dp"
+                    android:gravity="center_vertical|center_horizontal" >
+                    <TextView
+                        android:id="@+id/view_town_maincontent_leaveword"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="社区"
+                        android:background="@color/corner_selector"
+                        android:textColor="@color/main_bar_iconblue" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="2" >
+
+            <ImageView
+                android:id="@+id/view_town_maincontent_geoimage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:gravity="center_vertical|left" >
+
+        <TextView
+            android:id="@+id/view_town_maincontent_storycount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_marginLeft="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="2dp"
+            android:text="故事（12）"
+            android:textStyle="bold"
+            android:textColor="@color/grey_light"
+            android:paddingBottom="2dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/grey_light"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/view_town_hint"
+	    android:layout_width="match_parent"
+	    android:layout_height="150dp"
+	    android:background="@color/white"
+	    android:padding="5dp"
+	    android:gravity="center_vertical|center_horizontal">
+	    <TextView       
+	       android:layout_width="match_parent"
+	       android:layout_height="match_parent"
+	       android:text="@string/putao_nohint"
+	       android:textColor="@color/Gainsboro"
+	       android:gravity="center_horizontal|center_vertical" />
+	</RelativeLayout>
+
+</LinearLayout> <!-- 总介绍区结束 -->

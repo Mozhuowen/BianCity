@@ -1,0 +1,13 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.wechatsample.MainActivity" >    
+    <item
+        android:id="@+id/actionbar_town_delete"
+        android:title="@string/actionbar_deletetown"
+        />
+    <item
+        android:id="@+id/actionbar_town_create"
+        android:title="@string/actionbar_create"
+        />
+    
+</menu>

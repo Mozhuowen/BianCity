@@ -1,0 +1,178 @@
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    android:orientation="vertical"
+    android:background="@color/white" xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+	    <!-- <FrameLayout 
+	        android:id="@+id/activity_community_theme_titlebar"
+	        android:layout_width="match_parent"
+	        android:layout_height="42dp"
+	        android:layout_alignParentTop="true"
+	        android:background="#fff3f3f3">
+	        <ImageView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_vertical"
+	            android:src="@drawable/ic_navigation_back_normal"
+	            android:onClick="backEvent"
+	            />
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="50dp"
+	            android:layout_gravity="center_vertical"
+	            android:text="帖子"
+	            android:textSize="22sp"
+	            android:textStyle="bold"
+	            android:textColor="@color/grey_light" />
+	            <LinearLayout
+	                android:layout_width="wrap_content"
+	                android:layout_height="match_parent"
+	                android:layout_gravity="right|center_vertical"   
+	                android:gravity="center_vertical"
+	                android:orientation="horizontal" >
+	         <ImageView 
+	            android:id="@+id/activity_community_theme_dogood"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="10dp"
+	            android:layout_marginRight="10dp"
+	            android:src="@drawable/icon_bbs_hand_normal"
+	            />
+	        <ImageView 
+	            android:id="@+id/activity_community_reply"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="10dp"
+	            android:layout_marginRight="10dp"
+	            android:src="@drawable/icon_reply_tie"
+	            />
+	        <ImageView 
+	            android:id="@+id/activity_community_theme_settingview"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:visibility="gone"
+	            android:layout_marginLeft="10dp"
+	            android:layout_marginRight="10dp"
+	            android:src="@drawable/icon_more"
+	            />
+	        </LinearLayout>
+	    </FrameLayout> -->
+	    <me.maxwin.view.XListView
+	        android:id="@+id/activity_community_theme_xlist"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent" 
+	        android:divider="@null"
+	        android:cacheColorHint="@color/basecolor">
+    	</me.maxwin.view.XListView>
+    </RelativeLayout>
+   
+    
+    <RelativeLayout
+        android:id="@+id/activity_community_theme_editboxlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:focusable="true"
+        android:background="#8fff"
+        android:focusableInTouchMode="true"
+        android:layout_gravity="bottom" >
+	    <LinearLayout
+	        android:id="@+id/activity_community_theme_editbox"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_vertical"
+	        android:padding="5dp"	        
+	        android:orientation="horizontal" >
+	        <RelativeLayout
+	            android:layout_width="40dp"
+	            android:layout_height="wrap_content"
+	            android:gravity="center_horizontal"
+	            android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp" >
+		        <ImageView
+		            android:id="@+id/activity_community_theme_selectimg"
+		            android:layout_width="match_parent"
+		            android:layout_height="36dp"
+		            android:layout_gravity="center_vertical|center_horizontal"		            
+		            android:src="@drawable/icon_eidt_add_image" />
+		        <ImageView
+                    android:id="@+id/activity_community_them_redpos"
+                    android:layout_height="5dp"
+                    android:layout_width="5dp"
+                    android:visibility="gone"
+                    android:src="@drawable/icon_top_info_redpos"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="top|right" />
+	        </RelativeLayout>
+	        <EditText
+	            android:id="@+id/activity_community_theme_replycontent"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:layout_marginLeft="5dp"
+	            android:layout_marginRight="10dp"
+	            android:padding="5dp"
+	            android:background="@drawable/corners_bg"
+	            android:singleLine="false"
+	            android:hint="回复楼主" />
+	        <TextView
+	            android:id="@+id/activity_community_theme_btnreply"
+	            android:layout_width="60dp"
+	            android:layout_height="36dp"
+	            android:background="@color/corner_selector"
+	            android:clickable="true"
+	            android:gravity="center_vertical|center_horizontal"
+	            android:text="回复" />
+	        
+	    </LinearLayout>
+	    <LinearLayout
+	        android:id="@+id/activity_community_theme_images"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:visibility="gone"
+	        android:layout_marginTop="10dp"
+	        android:layout_below="@id/activity_community_theme_editbox"
+	        android:background="#8fff"
+	        android:orientation="vertical" />
+    </RelativeLayout>
+    
+    <!-- <LinearLayout
+        android:id="@+id/activity_community_theme_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="@color/basecolor"
+        android:layout_marginTop="42dp"
+        android:layout_gravity="right|top"
+        android:orientation="vertical" >
+        
+        <TextView
+            android:id="@+id/activity_community_theme_totop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:text="置顶" />
+        
+        <TextView
+            android:id="@+id/activity_community_theme_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginTop="10dp"
+            android:text="删帖" />
+        
+    </LinearLayout> -->
+    
+</FrameLayout>

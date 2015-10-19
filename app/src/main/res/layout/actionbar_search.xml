@@ -1,0 +1,11 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center" xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    <android.support.v7.widget.SearchView  
+        android:id="@+id/actionbar_searchview"
+        android:layout_width="match_parent"  
+        android:layout_height="match_parent" />
+    
+</LinearLayout>

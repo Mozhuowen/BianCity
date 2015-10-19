@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_near_mainlayout"
+    android:background="@color/basecolor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    tools:context="com.putaotown.MainActivity">
+    <!-- <FrameLayout
+        android:id="@+id/fragment_near_titile" 
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@color/basecolor"
+        >
+       
+        <TextView 
+            android:id="@+id/maintitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="消息"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/grey_light"
+            android:layout_gravity="center_horizontal|center_vertical" 
+            />
+    </FrameLayout> -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grey_light" />
+    <View
+        android:layout_marginTop="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/Gainsboro" />
+    <LinearLayout
+        android:id="@+id/fragment_news_comment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"        
+        android:background="@color/white_item_selector_linearlayout_bg"
+        android:orientation="horizontal" >
+        
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="4dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/msg_comment" />
+        
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="58dp"
+            android:textStyle="bold"
+            android:text="评论"
+            android:textSize="14sp"
+            android:textColor="@color/grey_light"
+            android:gravity="center_vertical"
+            android:padding="2dp" />    
+       <TextView
+           android:id="@+id/fragment_news_comment_count"
+           android:visibility="gone"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center_vertical"
+           android:background="@drawable/corners_bg_grey"
+           android:padding="5dp"
+           android:text="20" />    
+       <ImageView
+           android:layout_width="40dp"
+           android:layout_height="58dp"
+           android:layout_gravity="center_vertical"
+           android:scaleType="center"
+           android:src="@drawable/msg_arrow" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/Gainsboro" />
+   <LinearLayout
+       android:id="@+id/fragment_news_good_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:background="@color/white_item_selector_linearlayout_bg"
+        android:orientation="horizontal" >
+        
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="4dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/msg_good" />
+        
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="58dp"
+            android:textStyle="bold"
+            android:text="赞的"
+            android:textSize="14sp"
+            android:textColor="@color/grey_light"
+            android:gravity="center_vertical"
+            android:padding="2dp" />   
+       <TextView
+           android:id="@+id/fragment_news_goods_count"
+           android:visibility="gone"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center_vertical"
+           android:background="@drawable/corners_bg_grey"
+           android:padding="5dp"
+           android:text="20" />  
+       <ImageView
+           android:layout_width="40dp"
+           android:layout_height="58dp"
+           android:layout_gravity="center_vertical"
+           android:scaleType="center"
+           android:src="@drawable/msg_arrow" />  
+    </LinearLayout>
+   <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/Gainsboro" />
+   <LinearLayout
+       android:id="@+id/fragment_news_community_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:background="@color/white_item_selector_linearlayout_bg"
+        android:orientation="horizontal" >
+        
+        <ImageView
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_marginLeft="12dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/msg_community" />
+        
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="58dp"
+            android:layout_marginLeft="5dp"
+            android:textStyle="bold"
+            android:text="社区"
+            android:textSize="14sp"
+            android:textColor="@color/grey_light"
+            android:gravity="center_vertical"
+            android:padding="2dp" />   
+       <TextView
+           android:id="@+id/fragment_news_community_count"
+           android:visibility="gone"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center_vertical"
+           android:background="@drawable/corners_bg_grey"
+           android:padding="5dp"
+           android:text="20" />  
+       <ImageView
+           android:layout_width="40dp"
+           android:layout_height="58dp"
+           android:layout_gravity="center_vertical"
+           android:scaleType="center"
+           android:src="@drawable/msg_arrow" />  
+    </LinearLayout>
+   <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/Gainsboro" />
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragment_news_sys_layout"
+        android:clickable="true"
+        android:background="@color/white_item_selector_linearlayout_bg"
+        android:orientation="horizontal" >
+        
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginLeft="4dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/msg_notice" />
+        
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="58dp"
+            android:textStyle="bold"
+            android:text="系统消息"
+            android:textSize="14sp"
+            android:textColor="@color/grey_light"
+            android:gravity="center_vertical"
+            android:padding="2dp" />   
+       <TextView
+           android:id="@+id/fragment_news_sys_count"
+           android:visibility="gone"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center_vertical"
+           android:background="@drawable/corners_bg_grey"
+           android:padding="5dp"
+           android:text="20" />   
+       <ImageView
+           android:layout_width="40dp"
+           android:layout_height="58dp"
+           android:layout_gravity="center_vertical"
+           android:scaleType="center"
+           android:src="@drawable/msg_arrow" />  
+    </LinearLayout>
+   <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/Gainsboro" />
+</LinearLayout>

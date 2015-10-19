@@ -1,0 +1,55 @@
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:background="@color/basecolor"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@color/white_item_selector_linearlayout_bg"
+        android:orientation="vertical" >
+        
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:padding="5dp"
+          android:textColor="@color/grey_light"
+          android:textSize="12sp"
+          android:text="你的帖子有1条回复信息" />
+      
+      <TextView
+          android:id="@+id/listitem_msg_community_content"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:padding="5dp"
+          android:textColor="@color/grey_light"
+          android:textStyle="bold"
+          android:textSize="13sp"
+          android:maxLines="2"
+          android:text="发帖测试" />
+        
+      <!-- 时间显示 -->
+      <TextView
+          android:id="@+id/listitem_msg_community_time"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="5dp"
+          android:padding="5dp"
+          android:layout_gravity="left"
+          android:textSize="10sp"
+          android:text="2015-05-01 11:11:11"
+          android:textColor="@color/grey_light" />
+        
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/listitem_msg_community_1"
+        android:layout_width="wrap_content"
+        android:layout_height="87dp"
+        android:layout_gravity="right"
+        android:src="@drawable/msg_arrow"/>
+
+</FrameLayout>

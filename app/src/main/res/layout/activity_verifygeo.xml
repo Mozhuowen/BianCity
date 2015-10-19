@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    android:background="@color/basecolor"
+    android:orientation="vertical" >
+    <!-- <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="#fff3f3f3"
+        >
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_navigation_back_normal"
+            android:onClick="backEvent"
+            />
+        <TextView 
+            android:id="@+id/activity_messboard_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="使用自定义地址"
+            android:textSize="20sp"
+            android:textColor="#82858b"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal|center_vertical" 
+            />
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:src="@drawable/ic_note_complete_normal"
+            android:onClick="ok"
+            />
+    </FrameLayout> -->
+
+  	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical" >
+	      <TextView
+	          android:id="@+id/activity_verifygeo_address"
+	          android:layout_width="wrap_content"
+	          android:layout_height="wrap_content"
+	          android:padding="2dp"
+	          android:textColor="#82858b"
+	          android:text="广东省广州市"
+	          android:gravity="center_vertical"
+	          android:drawableLeft="@drawable/ic_location_large" /> 
+	    <EditText 
+	          android:id="@+id/activity_verifygeo_freeaddr"
+	          android:layout_width="match_parent"
+	          android:layout_height="wrap_content"
+	          android:layout_gravity="center_vertical"
+	          android:gravity="center_vertical"
+	          android:singleLine="true"
+	          android:hint="自定义地址"
+	          />
+    </LinearLayout>
+    
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/grey_light"
+            android:padding="2dp"
+            android:gravity="center_horizontal"
+            android:text="你可以长按并拖拽地图中的图标到更准确的位置哟" />
+
+    <com.amap.api.maps2d.MapView
+        android:id="@+id/activity_verifygeo_mapview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" />
+    
+    </LinearLayout>
+
+</LinearLayout>

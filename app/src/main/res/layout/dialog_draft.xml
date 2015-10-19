@@ -1,0 +1,62 @@
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:gravity="center_horizontal|center_vertical">
+    <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:background="@color/basecolor"
+        android:padding="10dp"
+        android:text="还没有保存到草稿，亲爱的确定离开吗？"
+        android:textSize="15sp"
+        android:textColor="#000"
+        />
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#000"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|center_horizontal" >
+	    <TextView 
+	        android:id="@+id/dialog_draft_exit"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:background="@color/white_item_selector_linearlayout_bg"
+	        android:layout_weight="1"
+	        android:gravity="center_vertical|center_horizontal"
+	        android:padding="10dp"
+	        android:text="直接离开"
+	        android:textSize="15sp"
+	        android:textColor="#000"
+	        />
+	    <View
+	        android:layout_width="1px"
+	        android:layout_height="match_parent"
+	        android:layout_margin="3dp"
+	        android:background="@color/divider_default" />
+	    <TextView 
+	        android:id="@+id/dialog_draft_save"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:background="@color/white_item_selector_linearlayout_bg"
+	        android:layout_weight="1"
+	        android:gravity="center_vertical|center_horizontal"
+	        android:padding="10dp"
+	        android:textSize="15sp"
+	        android:text="保存草稿"
+	        android:textColor="#000" />
+    </LinearLayout>
+</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    android:background="@color/basecolor" >
+    
+    <!-- <RelativeLayout
+        android:id="@+id/activity_msgshow_titlebar" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+	    <FrameLayout       
+	        android:layout_width="match_parent"
+	        android:layout_height="42dp"
+	        android:gravity="center_vertical"
+	        android:background="@color/basecolor"
+	        >
+	        <ImageView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_vertical"
+	            android:onClick="backEvent"
+	            android:src="@drawable/ic_navigation_back_normal" />
+	        <TextView 
+	            android:id="@+id/activity_msgshow_title"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textColor="#82858b"
+	            android:textSize="20sp"
+	            android:text="消息"
+	            android:textStyle="bold"
+	            android:layout_gravity="center_horizontal|center_vertical" 
+	            />
+	    </FrameLayout>
+	    
+    </RelativeLayout> -->
+    
+    <!-- 评论编写区 -->
+
+    <RelativeLayout
+        android:id="@+id/activity_msgshow_commentedit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/basecolor"
+        android:visibility="gone"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/activity_msgshow_submitcomment"
+            android:layout_width="60dp"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@color/corner_selector"
+            android:clickable="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="回复" />
+
+        <EditText
+            android:id="@+id/activity_msgshow_commentcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="36dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/activity_msgshow_submitcomment"
+            android:background="@drawable/corners_bg"
+            android:hint="回复"
+            android:paddingLeft="10dp"
+            android:singleLine="true" >
+        </EditText>
+    </RelativeLayout>
+    
+    <TextView
+        android:id="@+id/activity_msgshow_hint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="还没有消息"
+        android:textColor="@color/grey_light" />
+    
+    <ListView
+        android:id="@+id/activity_msgshow_xlistview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:layout_below="@id/activity_msgshow_hint"
+        android:layout_above="@+id/activity_msgshow_commentedit"
+        android:background="@color/white"
+        android:divider="@null">
+    </ListView>
+
+    
+
+</RelativeLayout>

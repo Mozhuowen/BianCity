@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.wechatsample.MainActivity" >
+
+    <!-- <item android:id="@+id/actionbar_search"
+          android:title="@string/actionbar_search"
+          android:showAsAction="collapseActionView|ifRoom"
+          android:actionViewClass="android.widget.SearchView" /> -->
+    <item
+        android:id="@+id/actionbar_qa"
+        android:title="@string/actionbar_qa"/>
+    <item
+        android:id="@+id/actionbar_about"
+        android:title="@string/actionbar_about"/>
+
+</menu>

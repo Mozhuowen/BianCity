@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 一镇 -->
+
+    <LinearLayout
+        android:id="@+id/view_mine_town_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/view_mine_town_image"
+            android:layout_width="135dp"
+            android:layout_height="135dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/view_mine_town_towname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/grey_light"
+	        android:textStyle="bold"
+            android:textSize="10sp" />
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_marginTop="5dp"
+		    android:orientation="horizontal"
+		    android:gravity="center_vertical" >
+            <ImageView
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:src="@drawable/iconfont_location_small"/>
+        <TextView
+            android:id="@+id/view_mine_town_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="left|center_vertical"
+            android:drawablePadding="0dp"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/grey_light"
+            android:text="testst "
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/view_mine_town_goods"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:gravity="center_vertical"
+            android:textColor="@color/grey_light"
+            android:text="20"
+            android:textSize="10sp" />
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:src="@drawable/ic_list_thumb_small"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

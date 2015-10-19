@@ -1,0 +1,95 @@
+<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@color/white"
+	    android:paddingLeft="8dp"
+	    android:paddingTop="10dp"
+	    android:paddingRight="8dp"
+	    android:orientation="vertical"
+     	xmlns:android="http://schemas.android.com/apk/res/android">
+     
+    <LinearLayout
+	    android:id="@+id/listitem_tietheme_mainlayout"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:clickable="true"
+	    android:focusable="true"
+	    android:padding="5dp"
+	    android:background="@color/white"
+	    android:orientation="vertical">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+    <!-- 头像 -->
+     <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/listitem_tietheme_usercover"
+		android:layout_width="42dp"
+		android:layout_height="42dp"
+		android:layout_alignParentLeft="true"
+		app:border_width="0dp" />    
+		
+     <LinearLayout
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:layout_marginLeft="5dp"
+         android:orientation="vertical" >
+         <TextView
+             android:id="@+id/listitem_tietheme_username"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textColor="@color/grey_light"
+             android:textStyle="bold"
+             android:text="M90chwo" />
+          <TextView
+             android:id="@+id/listitem_tietheme_time"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="7dp"
+             android:textColor="@color/grey_light"
+             android:textSize="10sp"
+             android:text="10小时前" />
+     </LinearLayout>
+     
+    </LinearLayout><!-- 头部结束 -->
+    
+    <TextView
+        android:id="@+id/listitem_tietheme_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/grey_light"
+        android:textStyle="bold"
+        android:autoLink="web"
+        android:textSize="14sp"
+        android:text="边城社区标题测试 " />
+    <TextView
+        android:id="@+id/listitem_tietheme_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="13sp"
+        android:autoLink="web"
+        android:textColor="@color/grey_light"
+        android:text="边城社区标题测试 " />
+    
+	</LinearLayout>
+	
+    <LinearLayout
+        android:id="@+id/listitem_tietheme_imagelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:orientation="vertical" />
+    
+    <View
+	     android:layout_width="match_parent"
+	     android:layout_height="1px"
+	     android:layout_marginTop="10dp"
+	     android:background="@color/Gainsboro" />
+        
+    
+</LinearLayout>

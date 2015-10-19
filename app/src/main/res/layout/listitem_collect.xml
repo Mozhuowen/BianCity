@@ -1,0 +1,68 @@
+<!-- 一个测试Item -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="horizontal"
+    >
+    <ImageView 
+        android:id="@+id/listitem_collect_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="centerCrop"
+        />
+    <LinearLayout 
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_weight="1"
+        >
+        <TextView
+            android:id="@+id/listitem_collect_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+             <TextView
+                 android:id="@+id/listitem_collect_date"
+	              android:layout_width="wrap_content"
+	              android:layout_height="wrap_content"
+	              android:layout_alignParentLeft="true"
+	              />
+             <!-- 点赞 -->
+             <LinearLayout 
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentRight="true"
+                 android:orientation="vertical"
+                 android:gravity="center_horizontal"
+                 >
+              <ImageView 
+                  android:layout_width="38dp"
+                  android:layout_height="wrap_content"
+                  android:background="@drawable/corners_bg"
+                  android:src="@drawable/ic_list_thumb"
+                  />
+              <!-- 点赞数显示 -->
+              <TextView 
+                  android:id="@+id/listitem_collect_good"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"			                            
+                  android:textSize="12sp"
+                  />
+             </LinearLayout>
+        </RelativeLayout>
+        
+    </LinearLayout>
+</LinearLayout> 
+</LinearLayout>

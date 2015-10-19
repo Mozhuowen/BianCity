@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff3f3f3"
+    android:padding="8dp" >
+
+   <ScrollView 
+    android:id="@+id/setting_scrollview" 
+    android:background="@color/app_background" 
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent" 	
+  	>
+  	<LinearLayout 
+  	    android:orientation="vertical" 
+  	    android:layout_width="fill_parent" 
+  	    android:layout_height="wrap_content">    
+  	    
+  	    
+  	<!--  我的资料区 -->
+  	<LinearLayout 
+  	    android:orientation="vertical" 
+  	    android:background="@drawable/bg_shadow" 
+  	    android:layout_width="fill_parent" 
+  	    android:layout_height="wrap_content" >
+  	    
+  	    <!-- 一条选择单元 -->
+  	    <LinearLayout 
+  	        android:id="@+id/fragment_mine_user"         
+  	        android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:gravity="center_vertical"
+            style="@style/style_horizontal_layout_with_click_effect" >
+            
+  	       
+                 <LinearLayout
+                     android:id="@+id/fragment_mine_loginlayout" 
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:orientation="horizontal"
+                     android:gravity="center_vertical"
+                     >
+                      <LinearLayout 
+                         android:onClick="onClick"
+                         android:id="@+id/fragment_mine_defaultlogintext" 
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content"
+                         android:layout_weight="1"
+                         android:gravity="center_horizontal"
+                         >
+                     <TextView 
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:textColor="@color/textcolor_4c" 
+	                    android:textSize="15.0sp" 
+	                    android:textStyle="bold"
+	                    android:text="登录"
+	                    />
+                     </LinearLayout>
+                     <View 
+                         android:layout_width="5px"
+                         android:layout_height="match_parent"
+                         android:background="#fff3f3f3"
+                         />
+                     <LinearLayout 
+                         android:onClick="onClick"
+                         android:id="@+id/fragment_mine_defaultregisttext" 
+                         android:layout_width="0dp"
+                         android:layout_height="wrap_content"
+                         android:layout_weight="1"
+                         android:gravity="center_horizontal"
+                         >
+                         <TextView 
+		                    android:layout_width="wrap_content"
+		                    android:layout_height="wrap_content"
+		                    android:textColor="@color/textcolor_4c" 
+		                    android:textSize="15.0sp" 
+		                    android:textStyle="bold"
+		                    android:text="注册"
+		                    />
+                     </LinearLayout>
+                     
+                 </LinearLayout>
+                
+                
+                <TextView 
+                    android:id="@+id/fragment_mine_userflag"
+                    android:textSize="15.0sp" 
+                    android:textColor="@color/textcolor_80" 
+                    android:gravity="right|center" 
+                    android:focusable="false" 
+                    android:focusableInTouchMode="false" 
+                    android:layout_width="match_parent" 
+                    android:layout_height="wrap_content" 
+                    android:drawableRight="@drawable/myprofile_list_icon_arrow" 
+                    android:drawablePadding="10.0dip" />
+            </LinearLayout>
+            <View 
+                android:background="@color/divider_bg" 
+                android:layout_width="fill_parent" 
+                android:layout_height="1.0px" />
+            
+            <LinearLayout 
+                android:id="@+id/fragment_mine_mytown" 
+	  	        android:layout_width="fill_parent"
+	            android:layout_height="wrap_content" 
+	            android:onClick="onClick"
+	            android:clickable="true"
+	            style="@style/style_horizontal_layout_with_click_effect" >
+                <TextView 
+                    android:textSize="15.0sp" 
+                    android:textStyle="bold" 
+                    android:textColor="@color/textcolor_4c" 
+                    android:layout_width="120.0dip" 
+                    android:layout_height="wrap_content" 
+                    android:text="我的小镇" />
+                
+                <TextView 
+                    android:textSize="15.0sp" 
+                    android:textColor="@color/textcolor_80" 
+                    android:gravity="right|center" 
+                    android:focusable="false" 
+                    android:focusableInTouchMode="false" 
+                    android:layout_width="fill_parent" 
+                    android:layout_height="wrap_content" 
+                    android:drawableRight="@drawable/myprofile_list_icon_arrow" 
+                    android:drawablePadding="10.0dip" />
+            </LinearLayout>
+            <View 
+                android:background="@color/divider_bg" 
+                android:layout_width="fill_parent" 
+                android:layout_height="1.0px" />
+            
+            <LinearLayout 
+                android:id="@+id/fragment_mine_createtown" 
+	  	        android:layout_width="fill_parent"
+	            android:layout_height="wrap_content" 
+	            android:clickable="true"
+	            android:onClick="onClick"
+	            style="@style/style_horizontal_layout_with_click_effect" >
+                <TextView 
+                    android:textSize="15.0sp" 
+                    android:textStyle="bold" 
+                    android:textColor="@color/textcolor_4c" 
+                    android:layout_width="120.0dip" 
+                    android:layout_height="wrap_content" 
+                    android:text="创建小镇" />
+                
+                <TextView 
+                    android:textSize="15.0sp" 
+                    android:textColor="@color/textcolor_80" 
+                    android:gravity="right|center" 
+                    android:focusable="false" 
+                    android:focusableInTouchMode="false" 
+                    android:layout_width="fill_parent" 
+                    android:layout_height="wrap_content" 
+                    android:drawableRight="@drawable/myprofile_list_icon_arrow" 
+                    android:drawablePadding="10.0dip" />
+            </LinearLayout>
+            <View 
+                android:background="@color/divider_bg" 
+                android:layout_width="fill_parent" 
+                android:layout_height="1.0px" />
+  	    
+  	</LinearLayout>
+
+  	<!-- 一个单元开始 -->
+  	<LinearLayout 
+  	    android:orientation="vertical" 
+  	    android:background="@drawable/bg_shadow" 
+  	    android:layout_width="fill_parent" 
+  	    android:layout_height="wrap_content"
+  	    android:layout_marginTop="30dp" >
+  	    <!-- 一条选择单元 -->
+  	    <LinearLayout 
+  	        android:id="@+id/fragment_mine_attentionlist" 
+  	        android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:clickable="true"
+            android:onClick="onClick"
+            style="@style/style_horizontal_layout_with_click_effect" >
+                <TextView 
+                    android:textSize="15.0sp" 
+                    android:textStyle="bold" 
+                    android:textColor="@color/textcolor_4c" 
+                    android:layout_width="120.0dip" 
+                    android:layout_height="wrap_content" 
+                    android:text="关注列表" />
+                
+                <TextView 
+                    android:textSize="15.0sp" 
+                    android:textColor="@color/textcolor_80" 
+                    android:gravity="right|center" 
+                    android:focusable="false" 
+                    android:focusableInTouchMode="false" 
+                    android:layout_width="fill_parent" 
+                    android:layout_height="wrap_content" 
+                    android:drawableRight="@drawable/myprofile_list_icon_arrow" 
+                    android:drawablePadding="10.0dip" />
+            </LinearLayout>
+            <View 
+                android:background="@color/divider_bg" 
+                android:layout_width="fill_parent" 
+                android:layout_height="1.0px" />
+            <!-- 一条选择单元 -->
+            <LinearLayout 
+  	        android:id="@+id/fragment_mine_collectlist" 
+  	        android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:clickable="true" 
+            android:onClick="onClick"
+            style="@style/style_horizontal_layout_with_click_effect" >
+                <TextView 
+                    android:textSize="15.0sp" 
+                    android:textStyle="bold" 
+                    android:textColor="@color/textcolor_4c" 
+                    android:layout_width="120.0dip" 
+                    android:layout_height="wrap_content" 
+                    android:text="收藏列表" />
+                <TextView 
+                    android:textSize="15.0sp" 
+                    android:textColor="@color/textcolor_80" 
+                    android:gravity="right|center" 
+                    android:focusable="false" 
+                    android:focusableInTouchMode="false" 
+                    android:layout_width="fill_parent" 
+                    android:layout_height="wrap_content" 
+                    android:drawableRight="@drawable/myprofile_list_icon_arrow" 
+                    android:drawablePadding="10.0dip" />
+            </LinearLayout>
+            <View 
+                android:background="@color/divider_bg" 
+                android:layout_width="fill_parent" 
+                android:layout_height="1.0px" />
+            <!-- 一条选择单元 -->
+            <LinearLayout 
+  	        android:id="@+id/setting_update" 
+  	        android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:clickable="true"
+            style="@style/style_horizontal_layout_with_click_effect" >
+                <TextView 
+                    android:textSize="15.0sp" 
+                    android:textStyle="bold" 
+                    android:textColor="@color/textcolor_4c" 
+                    android:layout_width="120.0dip" 
+                    android:layout_height="wrap_content" 
+                    android:text="检查更新" />
+                <TextView 
+                    android:textSize="15.0sp" 
+                    android:textColor="@color/textcolor_80" 
+                    android:gravity="right|center" 
+                    android:focusable="false" 
+                    android:focusableInTouchMode="false" 
+                    android:layout_width="fill_parent" 
+                    android:layout_height="wrap_content" 
+                    android:drawableRight="@drawable/myprofile_list_icon_arrow" 
+                    android:drawablePadding="10.0dip" />
+            </LinearLayout>
+             <View 
+                android:background="@color/divider_bg" 
+                android:layout_width="fill_parent" 
+                android:layout_height="1.0px" />
+            <!-- 一条选择单元 -->
+            <LinearLayout 
+  	        android:id="@+id/setting_about" 
+  	        android:layout_width="fill_parent"
+            android:layout_height="wrap_content" 
+            android:clickable="true"
+            style="@style/style_horizontal_layout_with_click_effect" >
+                <TextView 
+                    android:textSize="15.0sp" 
+                    android:textStyle="bold" 
+                    android:textColor="@color/textcolor_4c" 
+                    android:layout_width="120.0dip" 
+                    android:layout_height="wrap_content" 
+                    android:text="关于" />
+                <TextView 
+                    android:textSize="15.0sp" 
+                    android:textColor="@color/textcolor_80" 
+                    android:gravity="right|center" 
+                    android:focusable="false" 
+                    android:focusableInTouchMode="false" 
+                    android:layout_width="fill_parent" 
+                    android:layout_height="wrap_content" 
+                    android:drawableRight="@drawable/myprofile_list_icon_arrow" 
+                    android:drawablePadding="10.0dip" />
+            </LinearLayout>
+  	    </LinearLayout><!-- 白色整体单元结束 -->
+  	
+  	</LinearLayout><!-- Scrollview里面的第一个linearlayout -->
+</ScrollView>
+
+</LinearLayout>

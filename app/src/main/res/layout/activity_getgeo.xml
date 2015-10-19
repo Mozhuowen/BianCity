@@ -1,0 +1,64 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/basecolor"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    android:orientation="vertical" >
+    <!-- <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="#fff3f3f3"
+        >
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_navigation_back_normal"
+            android:onClick="backEvent"
+            />
+        <TextView 
+            android:id="@+id/activity_messboard_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="创建边城"
+            android:textSize="20sp"
+            android:textColor="#82858b"
+            android:layout_gravity="center_horizontal|center_vertical" 
+            />
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:src="@drawable/ic_note_complete_normal"
+            android:onClick="ok"
+            />
+    </FrameLayout> -->
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:textColor="#82858b"
+            android:textSize="11sp"
+            android:gravity="center_horizontal"
+            android:text="你将在以下地点附近建立边城，请开启手机定位功能并等待定位到当前位置" />
+        
+        <com.amap.api.maps.MapView
+	        android:id="@+id/activity_getgeo_mapview"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp" >
+    	</com.amap.api.maps.MapView>
+        
+    </LinearLayout>
+    
+</LinearLayout>

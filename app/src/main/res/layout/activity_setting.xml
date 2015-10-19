@@ -1,0 +1,163 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/basecolor"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    android:orientation="vertical" >
+    
+    <!-- <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@color/basecolor"
+        >
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_navigation_back_normal"
+            android:onClick="backEvent"
+            />
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="设置"
+            android:textSize="20sp"
+            android:textColor="#82858b"
+            android:layout_gravity="center_horizontal|center_vertical" 
+            />
+    </FrameLayout> 
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grey_light" /> -->
+    
+   <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@color/white_item_selector_linearlayout_bg"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:onClick="openEditUser"
+        android:padding="5dp" >
+        
+       <!-- 头像 -->
+    <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/activity_setting_usercover"
+            android:layout_alignParentLeft="true"
+			android:layout_width="42dp"
+			android:layout_height="42dp"
+			app:border_width="0dp" />
+    
+    <TextView
+        android:id="@+id/activity_setting_username"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/activity_setting_usercover"
+        android:layout_marginLeft="5dp"
+        android:textStyle="bold"
+        android:textColor="@color/grey_light"
+        android:text="moawen"
+        android:drawableRight="@drawable/ic_detail_small"
+        android:gravity="center_vertical" />
+    </RelativeLayout> 
+    
+  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:background="@color/white" >
+        <TextView
+            android:onClick="onExist"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@color/white_item_selector_linearlayout_bg"
+            android:textStyle="bold"
+            android:text="退出登录"
+            android:textSize="11sp"
+            android:textColor="@color/grey_light"
+            android:gravity="center_vertical"
+            android:padding="2dp"
+            android:drawableRight="@drawable/ic_detail_small" />
+        <View
+	        android:layout_width="match_parent"
+	        android:layout_height="1px"
+	        android:background="@color/Gainsboro" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@color/white_item_selector_linearlayout_bg"
+            android:clickable="true"
+            android:onClick="openDraft"
+            android:textStyle="bold"
+            android:text="草稿箱"
+            android:textSize="11sp"
+            android:textColor="@color/grey_light"
+            android:gravity="center_vertical"
+            android:padding="2dp"
+            android:drawableRight="@drawable/ic_detail_small" />
+        <View
+	        android:layout_width="match_parent"
+	        android:layout_height="1px"
+	        android:background="@color/Gainsboro" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@color/white_item_selector_linearlayout_bg"
+            android:clickable="true"
+            android:onClick="checkUpdate"
+            android:textStyle="bold"
+            android:text="检查更新"
+            android:textSize="11sp"
+            android:textColor="@color/grey_light"
+            android:gravity="center_vertical"
+            android:padding="2dp"
+            android:drawableRight="@drawable/ic_detail_small" />
+        <View
+	        android:layout_width="match_parent"
+	        android:layout_height="1px"
+	        android:background="@color/Gainsboro" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@color/white_item_selector_linearlayout_bg"
+            android:clickable="true"
+            android:onClick="openAbout"
+            android:textStyle="bold"
+            android:text="关于我们"
+            android:textSize="11sp"
+            android:textColor="@color/grey_light"
+            android:gravity="center_vertical"
+            android:padding="2dp"
+            android:drawableRight="@drawable/ic_detail_small" />
+        <View
+	        android:layout_width="match_parent"
+	        android:layout_height="1px"
+	        android:background="@color/Gainsboro" />
+        
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@color/white_item_selector_linearlayout_bg"
+            android:clickable="true"
+            android:onClick="openFAQ"
+            android:textStyle="bold"
+            android:text="常见问题"
+            android:textSize="11sp"
+            android:textColor="@color/grey_light"
+            android:gravity="center_vertical"
+            android:padding="2dp"
+            android:drawableRight="@drawable/ic_detail_small" />
+    </LinearLayout>
+ 
+    
+</LinearLayout>

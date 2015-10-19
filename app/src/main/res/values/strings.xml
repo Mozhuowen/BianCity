@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">边城</string>
+    <string name="biancity">边城</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_hot">热门</string>
+    <string name="title_near">附近</string>
+    <string name="title_mine">我的</string>
+    <string name="title_town">小镇</string>
+    <string name="down_fail">下载失败</string>
+    <string name="is_downing">正在下载</string>
+    <string name="down_sucess">下载成功</string>
+    <string name="open_mypage">打开我的主页</string>
+    <string name="edit_profile">编辑资料</string>
+    <string name="subscribe">订阅</string>
+    <string name="favorite">收藏</string>
+    <string name="community">社区</string>
+    <string name="mycity">我的边城</string>
+    
+    <string name="actionbar_search">搜索边城</string>
+    <string name="actionbar_qa">常见问题</string>
+    <string name="actionbar_about">关于边城</string>
+    <string name="actionbar_ok">创建</string>
+    <string name="actionbar_editprofile">编辑资料</string>
+    <string name="actionbar_draft">草稿箱</string>
+    <string name="actionbar_createtown">创建边城</string>
+    <string name="actionbar_vertify_position">确认位置</string>
+    <string name="actionbar_vertify_address">自定义地址</string>
+    <string name="actionbar_tiezi">帖子</string>
+    <string name="actionbar_community_message">社区消息</string>
+    <string name="actionbar_newtheme">发表新主题</string>
+    <string name="actionbar_zhiding">置顶</string>
+    <string name="actionbar_delete">删帖</string>
+    <string name="actionbar_msgcomment">评论消息</string>
+    <string name="actionbar_msggoogd">赞消息</string>
+    <string name="acitonbar_msgbbs">社区消息</string>
+    <string name="actionbar_msgsys">系统消息</string>
+    <string name="actionbar_deletetown">删除边城</string>
+    <string name="actionbar_create">创建故事</string>
+    <string name="actionbar_story">故事</string>
+    <string name="actionbar_storydelete">删除故事</string>
+    <string name="actionbar_map">查看地图</string>
+    <string name="actionbar_preview">排版预览</string>
+    
+    <string name="dialog_exit">确定退出</string>
+    <string name="dialog_ok">确定</string>
+    <string name="dialog_cancel">取消</string>
+    <string name="diloag_title_newversion">发现新版本</string>
+    <string name="dialog_update_ok">升级</string>
+    <string name="dialog_exitwithoutsavedtodraft">还没有保存到草稿箱，确定退出吗？</string>
+    
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    
+    <string name="test_string">blablablablablablablablablablablablablablablablablablablablablablablablablablablabla.......blablablablablablablablablablablablablablabla.....blablablablablablabla</string>
+	<!-- ImageViewer -->
+    <string name="viewpager_indicator">%1$d/%2$d</string>
+    <string name="imageviewer">图片查看</string>
+    <!-- 微博String -->
+    <string name="weibosdk_demo_token_to_string_format">Token：%1$s \nRefresh Token：%2$s \nexpires_in：%3$s \nUid: %4$s</string>
+    <string name="weibosdk_demo_token_to_string_format_1">Token：%1$s \n有效期：%2$s</string>
+    <string name="weibosdk_demo_token_has_existed">Token 仍在有效期内，无需再次登录。</string>
+    <!-- town -->
+    <string name="town_description">简介：  %1$s</string>
+    <string name="user_fans">粉丝 %1$d</string>
+    <string name="putao_nohint">还没有创建故事</string>
+    <string name="nomorehint">没有更多了</string>
+    <string name="comment_nohint">还没有评论</string>
+    <string name="near_none">附近还没有边城，赶紧去创建一个吧</string>
+    <!-- comment -->
+    <string name="comment_reply">%1$s  回复    %2$s</string>
+    <!-- messboard -->
+    <string name="messboard_nomess">请开启手机定位功能，需要在距离边城50米范围内才能留言哦，再努力靠近一点点吧</string>
+    <string name="messboard_showdistan">请开启手机定位功能，需要在距离边城50米范围内才能留言哦，你距离边城还有%1$d米，再努力靠近一点点吧</string>
+    <string name="messboard_no">还没有留言</string>
+    <string name="messboard_canmess">你在边城附近，可以留言哦</string>
+    <!-- putao -->
+    <string name="putao_publishtime">发布于  %1$s</string>
+    <!-- subscribe -->
+    <string name="subscri_yes">订阅</string>
+    <string name="subscri_no">取消订阅</string>
+    <!-- favorite -->
+    <string name="favorite_yes">收藏</string>
+    <string name="favorite_no">取消收藏</string>
+    
+    <string name="hot_title">主页</string>
+    <string name="addressinfo_str">地址信息 :</string>
+    
+    <string name="faq_1">1. 这个APP究竟是个什么鬼？</string>
+    <string name="faq_1a">边城APP可以让你创建一个围绕准确地点的移动社区。你可以为任何感兴趣的地点创建边城社区，向人们分享你的移动社区的信息。</string>
+    <string name="faq_2">2. 我用得很不爽怎么办？</string>
+    <string name="faq_2a">私密马赛~~~大鞠躬 如果有什么建议和问题记得骚扰我们，我们会下一版本中不断改进的，亲请耐心等待。</string>
+    <string name="faq_3">3. 话说iPhone版呢？</string>
+    <string name="faq_3a">IOS小伙伴正在加紧开发中，同时欢迎志同道合的小伙伴联系和加入我们。</string>
+    <string name="faq_4">4. 怎么骚扰你们？</string>
+    <string name="faq_4a">mozhuowen@gmail.com</string>
+    <string name="faq_5">5. 看完这一页我准备把你们的APP给卸了</string>
+    <string name="faq_5a">や!め!て! (ㄒoㄒ)// 泪奔中 你酱对一个乳齿善良的APP真的好么</string>
+    
+    <string name="story_count">故事(%1$s)</string>
+    <string name="comment_str">评论</string>
+    
+    <string name="user_biancity">边城</string>
+    <string name="user_story">故事</string>
+    <string name="user_fans_f">粉丝</string>
+    <string name="user_subs">订阅</string>
+    <string name="user_favorite">收藏</string>
+    <string name="user_goods">被赞</string>
+    <string name="user_community">社区</string>
+    <!-- global hint -->
+    <string name="get_no_position">获取当前位置失败，请尝试点击重试</string>
+    <string name="get_no_content">获取失败，请尝试点击重试</string>
+    
+    <!-- abount activity str -->
+    <string name="about_version">版本%1$s</string>
+    <string name="about_description">
+        边城APP可以帮助你创建一个基于地点的移动社区。你可以在任何感兴趣的地点创建边城移动社区，向周围的人分享你的信息。
+	\n
+	\n如果你是商家，你可以为你的店铺创建一个边城，向附近的消费者展示你商品和服务，和你的顾客保持联系。
+	\n
+	\n如果你是一名旅行者，你可在令你惊叹的景点创建一个边城，向景点附近的人们分享你的发现和感受，并和网友讨论感兴趣的旅行信息。
+	\n
+	\n如果你是一名学生，你可以在你的学校、教室、宿舍为地点中心创建一个边城，向周围的同学朋友分享和讨论你们的趣事。
+	\n
+	\n如果你是一名白领，你可以为上下班途中的一个公交站、餐厅创建边城，和经过这里的人们交流彼此的故事，发现相同轨迹的人不一样的人生。
+	\n
+	\n如果你正在热恋，不要忘了在他当初向你表白的那颗梧桐树下创建一个边城。
+	\n
+	\n如果你正在创业，不要忘了在你们最初奋斗的那个出租房创建一个边城。
+	\n
+	\n翠翠的边城里写满了美好、感动和遗憾，你的呢？
+	</string>
+	<string name="msg_comment_reply">回复  你</string>
+	<string name="msg_comment_normal">评论  你的故事</string>
+	<string name="msg_good_story">赞了  你的故事</string>
+	<string name="msg_good_town">赞了  你的边城</string>
+	<string name="msg_good_comment">赞了  你的评论</string>
+	<string name="msg_systitle">系统消息</string>
+    
+	<!-- Mipush -->
+    <string name="reset">已暂停推送, 点此重新启用</string>
+    <string name="log">日志</string>
+    <string name="settings">设置</string>
+    <string name="set_alias">设置别名</string>
+    <string name="unset_alias">撤销别名</string>
+    <string name="subscribe_topic">订阅标签</string>
+    <string name="unsubscribe_topic">撤销标签</string>
+    <string name="set_env">设置环境</string>
+    <string name="set_accept_time">设置时间</string>
+    <string name="pause_push">暂停推送</string>
+    <string name="current_env">当前环境：%s</string>
+    <string name="official_env">线上环境</string>
+    <string name="sandbox_env">沙箱环境</string>
+    <string name="register_success">Register push success.</string>
+    <string name="register_fail">Register push fail.</string>
+    <string name="recv_message"> Receive a message. Content is \"%1$s\"</string>
+    <string name="set_alias_success"> Set alias \"%1$s\" success.</string>
+    <string name="set_alias_fail"> Set alias fail for %1$s.</string>
+    <string name="unset_alias_success"> Unset alias \"%1$s\" success.</string>
+    <string name="unset_alias_fail"> Unset alias fail for %1$s.</string>
+    <string name="subscribe_topic_success"> Subscribe topic \"%1$s\" success.</string>
+    <string name="subscribe_topic_fail"> Subscribe topic fail for %1$s.</string>
+    <string name="unsubscribe_topic_success"> Unsubscribe topic \"%1$s\" success.</string>
+    <string name="unsubscribe_topic_fail"> Unsubscribe topic fail for %1$s.</string>
+    <string name="set_accept_time_success"> Set accept time %1$s - %2$s success.</string>
+    <string name="set_accept_time_fail"> Set accept time fail for %1$s.</string>
+    <!-- 社区 -->
+    <string name="bbs_membercount">成员： %1$s</string>
+    <string name="bbs_tiecount">帖子： %1$s</string>
+    <string name="bbs_lou">第%1$s楼</string>
+</resources>

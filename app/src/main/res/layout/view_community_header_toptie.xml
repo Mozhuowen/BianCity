@@ -1,0 +1,37 @@
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"    
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@color/text_selector"
+     xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+       android:layout_width="match_parent"       
+       android:layout_height="48dp"      
+       android:paddingTop="10dp" >
+       
+   <ImageView
+       android:layout_width="40dp"
+       android:layout_height="28dp"
+       android:id="@+id/view_community_header_toptie"
+       android:layout_alignParentLeft="true"
+       android:src="@drawable/icon_top" />
+   <TextView
+       android:id="@+id/view_community_header_title"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="10dp"
+       android:layout_toRightOf="@id/view_community_header_toptie"
+       android:layout_alignParentRight="true"
+       android:textSize="18sp"
+       android:padding="2dp" />
+   
+   <View
+	    android:layout_width="match_parent"
+	    android:layout_height="1px"
+	    android:layout_marginTop="10dp"
+	    android:layout_alignParentBottom="true"
+	    android:background="@color/Gainsboro" />
+        
+</RelativeLayout>
+</RelativeLayout>

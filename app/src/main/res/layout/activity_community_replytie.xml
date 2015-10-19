@@ -1,0 +1,201 @@
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    android:background="@color/white" xmlns:android="http://schemas.android.com/apk/res/android">    
+    <!-- <FrameLayout 
+        android:id="@+id/activity_community_replytie_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_alignParentTop="true"
+        android:background="#fff3f3f3">
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_navigation_back_normal"
+            android:onClick="backEvent"
+            />
+        <TextView 
+            android:id="@+id/activity_community_replytie_titletext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="第一楼"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/grey_light"
+            android:layout_gravity="center_horizontal|center_vertical" 
+            />
+          <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:layout_gravity="right|center_vertical"   
+              android:gravity="center_vertical"
+              android:orientation="horizontal" >
+
+        <ImageView 
+            android:id="@+id/activity_replytie_btnreply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/icon_reply_tie"
+            />
+        <ImageView 
+            android:id="@+id/activity_community_replytie_settingview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/icon_more"
+            />
+        </LinearLayout>
+    </FrameLayout> -->
+	
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"        
+        android:paddingLeft="8dp"
+	    android:paddingTop="10dp"
+	    android:paddingRight="8dp" >
+       
+       <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/activity_tietheme_tie_usercover"
+		android:layout_width="42dp"
+		android:layout_height="42dp"
+		android:layout_alignParentLeft="true"
+		app:border_width="0dp" /> 
+		
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="5dp"
+           android:layout_toRightOf="@id/activity_tietheme_tie_usercover"
+           android:orientation="vertical" >
+       <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >  
+            <LinearLayout
+                android:layout_width="0dp"
+             android:layout_height="wrap_content"
+             android:layout_weight="1"
+             android:orientation="vertical" >
+          <TextView
+             android:id="@+id/activity_tietheme_tie_username"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:lines="1"
+             android:textStyle="bold"
+             android:textColor="@color/grey_light"
+             android:text="M90chwo" />
+          <RelativeLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:gravity="center_vertical" >
+              <TextView
+	             android:id="@+id/activity_tietheme_tie_lou"
+	             android:layout_width="wrap_content"
+	             android:layout_height="wrap_content"
+	             android:layout_marginTop="7dp"
+	             android:textColor="@color/grey_light"
+	             android:textSize="10sp"
+	             android:text="第1楼" />
+	          <TextView
+	             android:id="@+id/activity_tietheme_tie_time"
+	             android:layout_width="wrap_content"
+	             android:layout_height="wrap_content"
+	             android:layout_marginLeft="5dp"
+	             android:layout_toRightOf="@id/activity_tietheme_tie_lou"
+	             android:layout_marginTop="7dp"
+	             android:textColor="@color/grey_light"
+	             android:textSize="10sp"
+	             android:text="10小时前" />
+	            
+          </RelativeLayout>       
+         	</LinearLayout>
+         
+         </LinearLayout><!-- 头部结束 -->
+          
+          <TextView
+	        android:id="@+id/activity_tietheme_tie_content"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="5dp"
+	        android:maxLines="2"
+	        android:text="边城社区标题测试 " />
+          
+          <LinearLayout
+	        android:id="@+id/activity_tietheme_tie_imagelayout"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:visibility="gone"
+	        android:orientation="vertical" />
+          
+        <LinearLayout
+              android:id="@+id/activity_tietheme_tie_replys"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="5dp"
+              android:layout_marginBottom="20dp"
+              android:orientation="vertical" >
+             
+              <View
+			     android:layout_width="match_parent"
+			     android:layout_height="1px"
+			     android:layout_marginTop="10dp"
+			     android:background="@color/Gainsboro" />
+            
+          </LinearLayout>
+            
+        </LinearLayout>
+    	
+    </RelativeLayout>
+    
+    </ScrollView>
+    
+    
+    <RelativeLayout
+	        android:id="@+id/activity_community_replytie_editboxlayout"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="#8fff"
+	        android:layout_alignParentBottom="true"
+	        android:layout_gravity="bottom" >
+	    <LinearLayout
+	        android:id="@+id/activity_community_replytie_editbox"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_vertical"
+	        android:padding="5dp"	        
+	        android:orientation="horizontal" >
+	        <EditText
+	            android:id="@+id/activity_community_replytie_replycontent"
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1"
+	            android:layout_marginLeft="5dp"
+	            android:layout_marginRight="10dp"
+	            android:padding="5dp"
+	            android:background="@drawable/corners_bg"
+	            android:singleLine="false"
+	            android:hint="我来说一句" />
+	        <TextView
+	            android:id="@+id/activity_community_replytie_btnreply"
+	            android:layout_width="60dp"
+	            android:layout_height="36dp"
+	            android:background="@color/corner_selector"
+	            android:clickable="true"
+	            android:gravity="center_vertical|center_horizontal"
+	            android:text="回复" />
+	        
+	    </LinearLayout>
+    	</RelativeLayout>
+  
+</RelativeLayout>

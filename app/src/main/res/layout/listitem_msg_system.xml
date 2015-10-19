@@ -1,0 +1,39 @@
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@color/basecolor"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="@color/white"
+        android:orientation="vertical" >
+        
+      <TextView
+          android:id="@+id/listitem_msg_system_content"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:padding="5dp"
+          android:textColor="@color/grey_light"
+          android:textSize="10sp"
+          android:text="啦啦啦，系统消息来啦" />
+        
+      <!-- 时间显示 -->
+      <TextView
+          android:id="@+id/listitem_msg_system_time"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="5dp"
+          android:padding="5dp"
+          android:layout_gravity="right"
+          android:textSize="10sp"
+          android:text="2015-05-01 11:11:11"
+          android:textColor="@color/grey_light" />
+        
+    </LinearLayout>
+    
+</RelativeLayout>

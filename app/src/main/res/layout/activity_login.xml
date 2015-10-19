@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff3f3f3"
+    android:orientation="vertical" >
+    <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="#fff3f3f3"
+        >
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_navigation_back_normal"
+            android:onClick="backEvent"
+            />
+        <TextView 
+            android:id="@+id/activity_login_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="登录"
+            android:textSize="20sp"
+            android:textColor="#82858b"
+            android:layout_gravity="center_horizontal|center_vertical" 
+            />
+        <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:src="@drawable/ic_note_complete_normal"
+            android:onClick="ok"
+            />
+    </FrameLayout>
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="1px"
+    android:background="#ff5b5148" />
+    
+   <ScrollView 
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:background="#fff"
+       >
+       <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onChoseImage"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:background="#fff"
+            >
+                      
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:stretchColumns="1"
+                 >
+            	<TableRow >
+            	    <TextView 
+            	        android:layout_height="wrap_content"
+            	        android:text="用户名:" />
+            	    <EditText 
+            	        android:id="@+id/activity_login_name"
+            	        android:layout_height="wrap_content"
+            	        android:inputType="textMultiLine|textNoSuggestions"
+            	        android:hint="请输入用户名"/>
+            	</TableRow>
+            	<TableRow >
+            	    <TextView 
+            	        android:layout_height="wrap_content"
+            	        android:text="密码:" />
+            	    <EditText 
+            	        android:id="@+id/activity_login_password"
+            	        android:layout_height="wrap_content"
+            	        android:inputType="textMultiLine|textNoSuggestions"
+            	        android:hint="密码"/>
+            	</TableRow>
+            	<Button 
+           	        android:id="@+id/activity_login_registe"
+           	        android:gravity="right|center_vertical"
+           	        android:paddingRight="10dp"
+           	        android:text="去注册 "
+           	        android:background="#fff"
+           	        />
+            	
+            </TableLayout>
+           
+        </LinearLayout>
+        
+     </ScrollView>   
+</LinearLayout>

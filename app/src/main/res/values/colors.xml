@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="btnpress">#00ffff</color>
+    <color name="lightblue">#0099CC</color>
+    <color name="white">#fff</color>
+    <color name="red">#f00</color>
+    <color name="blue">#00f</color>
+    <color name="green">#0f0</color>
+    <color name="app_background">#fff2f1ed</color>
+    <color name="textcolor_4c">#ff4c4c4c</color>
+    <color name="textcolor_80">#ff808080</color>
+    <color name="divider_bg">#ffe5e5e5</color>
+    <color name="intro_bg">#ff2d2d2d</color>
+    <color name="black_alpha_03">#07000000</color>
+    <color name="main_orange">#ffffa941</color>
+    <color name="gezi">#ffde6270</color>
+    <color name="gezipress">#ffde62a0</color>
+    <color name="textcolor_66">#ff666666</color>
+    
+    <color name="fb_blue">#ff3b5998</color>
+    <color name="fb_blue_press">#ff25365a</color>
+    <color name="basecolor">#fff3f3f3</color>
+	<color name="divider_default">#ff5b5148</color>
+	<color name="grey_light">#82858b</color>
+	<color name="Gainsboro">#DCDCDC</color>
+	<color name="DodgerBlue">#1E90FF</color>
+	<color name="SkyBlue">#87CEEB</color>
+	<color name="ThinkBlue">#47B0F9</color>
+	<color name="MidnightBlue">#191970</color>
+	<color name="GhostWhite">#F8F8FF</color>
+	<color name="Lavender">#E6E6FA</color>
+	<color name="main_bar_iconcolor">#a9b7b7</color>
+	<color name="main_bar_iconblue">#17abe3</color>
+	<!-- mipush -->
+	<color name="color_title_back">#EFEFF0</color>
+    <color name="color_black_tran_50">#80000000</color>
+    <color name="color_orange">#EE5B1A</color>
+    
+    <color name="slidingtab_background_tab_pressed">#6633B5E5</color>
+</resources>

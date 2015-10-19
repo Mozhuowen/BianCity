@@ -1,0 +1,24 @@
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     xmlns:android="http://schemas.android.com/apk/res/android">
+     
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+         >
+        <Spinner
+            android:id="@+id/actionbar_spinner"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+        <ImageView
+            android:id="@+id/actionbar_ok"
+            android:layout_width="35dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/bc_btn"
+            android:src="@drawable/iconfont_correct" />
+    </LinearLayout>
+      
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<resources>
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:itemTextAppearance">@style/BCActionBarOverflow</item>
+        <item name="android:actionOverflowButtonStyle">@style/BCActionButtonOverflow</item>
+        <item name="colorPrimary">@color/fb_blue</item>
+        <item name="colorPrimaryDark">@color/fb_blue</item>
+        <item name="android:actionBarStyle">@style/BCActionBar</item>
+        <item name="colorButtonNormal">@color/fb_blue</item>
+    </style>
+    
+    <style name="BCActionBar" parent="@style/Widget.AppCompat.ActionBar.Solid">
+        <item name="background">@color/fb_blue</item>
+        <item name="titleTextStyle">@style/BCActionBarTitleText</item>
+    </style>
+     <style name="BCActionBarTitleText" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+    <style name="BCActionBarOverflow" parent="@style/Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="BCActionButtonOverflow" parent="@style/Widget.AppCompat.Light.ActionButton.Overflow">
+        <!--<item name="android:src">@drawable/actionbar_more_white</item>-->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <style name="BCNoTitleTheme" parent="AppBaseTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimaryDark">@color/fb_blue</item>
+    </style>
+    <!-- some widget style here -->
+    <style name="BCButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="colorButtonNormal">@color/fb_blue</item>
+	    <item name="background">@color/fb_blue</item>
+        <item name="android:textColor">@android:color/white</item>
+	</style>
+    <style name="style_horizontal_layout_with_click_effect" parent="android:style/Animation">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@color/white_item_selector_linearlayout_bg</item>
+        <item name="android:paddingLeft">12.0dip</item>
+        <item name="android:paddingRight">10.0dip</item>
+        <item name="android:minHeight">@dimen/home_menu_core_item_height</item>
+    </style>
+    
+    <style name="dialog" parent="@android:style/Theme.Light">   
+                　　<item name="android:windowFrame">@null</item>
+                　　<item name="android:windowIsFloating">true</item>  
+                　　<item name="android:windowIsTranslucent">false</item>  
+                　　<item name="android:windowNoTitle">true</item> 
+                　　<item name="android:background">@android:color/transparent</item>   
+                　　<item name="android:windowBackground">@android:color/transparent</item> 
+                　　<item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="dialog2" parent="@android:style/Theme.Dialog">  
+		<item name="android:windowFrame">@null</item>  
+		<item name="android:windowIsFloating">true</item>  
+		<item name="android:windowIsTranslucent">false</item>  
+		<item name="android:windowNoTitle">true</item>  
+		<item name="android:background">@android:color/white</item>  
+		<item name="android:backgroundDimEnabled">false</item> 
+		<item name="android:windowBackground">@android:color/transparent</item>
+	</style>
+	<style name="Widget_GifMoviewView" parent="@android:style/Widget"></style>
+	
+	<!-- markdown toolbar style -->
+	<style name="ToolbarItemStyle" >             
+       <item name="android:gravity">center</item>
+       <item name="android:padding">3dp</item>       
+       <item name="android:textSize">11sp</item> 
+       <item name="android:clickable">true</item>   
+       <item name="android:textColor">@color/grey_light</item>
+    </style>
+
+</resources>

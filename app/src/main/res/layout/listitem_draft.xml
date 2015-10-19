@@ -1,0 +1,67 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:background="@color/white_item_selector_linearlayout_bg"
+    android:layout_marginTop="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:orientation="horizontal"
+    >
+    <ImageView 
+        android:id="@+id/listitem_draft_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="centerCrop"
+        />
+    <LinearLayout 
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:layout_weight="1"
+        >
+        <TextView
+            android:id="@+id/listitem_draft_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey_light"
+            android:textStyle="bold"
+            android:text="标题"
+            />
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+             <TextView
+                 android:id="@+id/listitem_draft_desci"
+	              android:layout_width="wrap_content"
+	              android:layout_height="wrap_content"
+	              android:layout_marginTop="5dp"
+	              android:layout_alignParentLeft="true"
+	              android:textColor="@color/grey_light"
+	              android:textStyle="bold"
+	              android:text="边城"
+	              />            
+        </RelativeLayout>              
+    </LinearLayout>
+     <ImageView
+         android:id="@+id/listitem_draft_delete"
+          android:layout_width="45dp"
+          android:layout_height="45dp"
+          android:layout_gravity="center_vertical"
+          android:src="@drawable/delete" />
+    
+</LinearLayout> 
+<View    
+    android:layout_width="match_parent"
+    android:layout_height="1px"
+    android:layout_gravity="center_vertical"
+    android:background="@color/Gainsboro" />
+</LinearLayout>

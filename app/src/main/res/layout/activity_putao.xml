@@ -1,0 +1,238 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff3f3f3"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:id="@+id/activity_putao_titlebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+	    <FrameLayout        
+	        android:layout_width="match_parent"
+	        android:layout_height="42dp"
+	        android:background="#fff3f3f3"
+	        android:layout_alignParentTop="true" >
+	        <ImageView 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_vertical"
+	            android:src="@drawable/ic_navigation_back_normal"
+	            android:onClick="backEvent"
+	            />
+	        <TextView 
+	            android:id="@+id/activity_putao_title"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="故事"
+	            android:textSize="20sp"
+	            android:textColor="#82858b"
+	            android:layout_gravity="center_horizontal|center_vertical" 
+	            />
+	        <ImageView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="center_vertical|right"
+	            android:src="@drawable/delete" />
+	    </FrameLayout>
+	    <LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="1px"
+		    android:background="#ff5b5148" />
+    </LinearLayout>
+
+   <ScrollView 
+       android:id="@+id/activity_putao_scrollview"
+        android:layout_below="@+id/activity_putao_titlebar"
+        android:layout_above="@+id/activity_putao_commentedit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+        
+        <!-- 封面图片区 -->
+        <FrameLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            
+            <ImageView 
+                android:id="@+id/activity_putao_cover"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                />
+           <TextView 
+               android:id="@+id/activity_putao_putaotitle"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="#000"
+               android:layout_gravity="bottom"
+               android:gravity="center_horizontal"
+               android:textColor="#fff"
+               android:text="我的小镇" />    
+        </FrameLayout>
+        
+        <!-- 属性介绍区 -->
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10px"
+            android:gravity="center_vertical"
+            android:background="#fff"
+            >
+            <!-- 主人头像区 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/activity_putao_usercover"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+			    android:layout_width="30dp"
+			    android:layout_height="30dp"
+			    app:border_width="2dp"
+			    app:border_color="#FFFFFFFF"/>
+            <TextView 
+                android:id="@+id/activity_putao_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="AWEN"
+                android:textSize="10sp"
+                />
+           </LinearLayout> 
+           <!-- 发表时间 -->
+           <LinearLayout 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:padding="10px"
+               android:layout_weight="1"
+               android:gravity="center_horizontal|left"
+               >
+               <TextView 
+                   android:id="@+id/activity_putao_createtime"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:text="发表于 2015-1-1"
+		            android:textSize="10sp"
+	            />
+           </LinearLayout>
+           <!-- 点赞 -->
+           <LinearLayout 
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentRight="true"
+                 android:orientation="vertical"
+                 android:gravity="center_horizontal"
+                 >
+              <ImageView 
+                  android:layout_width="38dp"
+                  android:layout_height="wrap_content"
+                  android:background="@drawable/corners_bg"
+                  android:src="@drawable/ic_list_thumb"
+                  />
+              <!-- 点赞数显示 -->
+              <TextView 
+                  android:id="@+id/listitem_putao_good"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"			                            
+                  android:textSize="12sp"
+                  />
+             </LinearLayout>
+	        
+        </LinearLayout>
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#fff"           
+            >
+            <!-- <TextView 
+                android:id="@+id/activity_putao_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10px"
+                android:text="@string/test_string"
+                /> -->
+                <TextView
+			        android:id="@+id/activity_putao_content"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:padding="10dp"                  
+			        android:background="@color/white"
+			        android:lineSpacingMultiplier="1.2"/>
+            <LinearLayout
+                android:id="@+id/activity_putao_images"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="#fff"
+                android:orientation="vertical" />
+        </LinearLayout>
+        <!-- 评论显示区 -->
+        <FrameLayout 
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="10dp"
+             android:background="#fff"
+             >
+	       <ListView
+		        android:id="@+id/activity_putao_listv"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content" 
+		        android:padding="5dp"
+		        android:divider="@null" />
+
+	    </FrameLayout>
+        
+        
+   </LinearLayout>
+        
+    </ScrollView>
+    <!-- 评论编写区 -->
+    <RelativeLayout
+        android:id="@+id/activity_putao_commentedit"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#fff3f3f3"
+        android:gravity="center_vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_alignParentBottom="true" >
+        <TextView
+            android:id="@+id/activity_putao_submitcomment"
+            android:layout_width="60dp"
+            android:layout_height="26dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@color/corner_selector"
+            android:gravity="center_vertical|center_horizontal"
+            android:clickable="true"
+            android:text="评论"
+            android:textSize="10sp" />
+        
+        <EditText
+            android:id="@+id/activity_putao_commentcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="26dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_toLeftOf="@+id/activity_putao_submitcomment"
+            android:background="@drawable/corners_bg"
+            android:hint="  说点什么吧"
+            android:singleLine="true"
+            android:textSize="10sp" >
+        </EditText>
+    </RelativeLayout>
+
+</RelativeLayout>

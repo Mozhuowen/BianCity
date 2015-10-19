@@ -1,0 +1,18 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff3f3f3"
+    android:orientation="vertical" >
+    
+    <me.maxwin.view.XListView
+        android:id="@+id/fragment_mine_xlist_xlistview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:background="@color/basecolor"
+        android:divider="@null">
+    </me.maxwin.view.XListView>
+
+    
+
+</RelativeLayout>

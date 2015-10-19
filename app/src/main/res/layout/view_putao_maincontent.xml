@@ -1,0 +1,193 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <!-- 封面图片区 -->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/view_putao_maincontent_cover"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/view_putao_maincontent_putaotitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:layout_gravity="bottom"
+            android:background="#8000"
+            android:gravity="center_horizontal"
+            android:textSize="14sp"
+            android:text="天空之城"
+            android:textColor="@color/white" />
+    </FrameLayout>
+
+    <!-- 属性介绍区 -->
+
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <!-- 主人头像区 -->
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/view_putao_maincontent_usercover"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:onClick="openUser"
+            app:border_color="#FFFFFFFF"
+            app:border_width="2dp" />
+
+            
+        <!-- 发表时间 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|left"
+            android:orientation="vertical"
+            android:padding="10px" >
+            
+            <TextView
+                android:id="@+id/view_putao_maincontent_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/grey_light"
+	            android:textStyle="bold"
+                android:text="AWEN"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/view_putao_maincontent_createtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/grey_light"
+                android:text="发布于 2015-1-1"
+                android:textSize="10sp" />
+        </LinearLayout>
+ 
+
+       <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+            <TextView
+                android:id="@+id/view_putao_maincontent_favorite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="6dp"
+                android:paddingTop="2dp"
+                android:paddingRight="6dp"
+                android:paddingBottom="2dp"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/corner_selector"
+                android:textColor="@color/Gainsboro"
+                android:clickable="true"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="收藏" />
+            <TextView
+                android:id="@+id/view_putao_maincontent_good"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textColor="@color/grey_light"
+                android:text="0" />
+           <ImageView
+               android:id="@+id/view_putao_maincontent_good_image"
+               android:layout_width="25dp"
+               android:layout_height="25dp"
+               android:clickable="true"
+               android:src="@drawable/ic_list_thumb" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:clickable="false"
+        android:background="#fff"
+        android:orientation="vertical" >
+
+        <!-- <TextView
+            android:id="@+id/view_putao_maincontent_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/test_string" /> -->
+            
+       <TextView
+	        android:id="@+id/view_putao_maincontent_content"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:padding="10dp"                  
+	        android:background="@color/white"
+	        android:lineSpacingMultiplier="1.2"/>
+
+        <LinearLayout
+            android:id="@+id/view_putao_maincontent_images"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"       
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
+            android:orientation="vertical" />
+    </LinearLayout>
+    
+    <TextView
+            android:id="@+id/view_putao_maincontent_commentcount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_marginLeft="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="2dp"
+            android:text="@string/comment_str"
+            android:textStyle="bold"
+            android:textColor="@color/Gainsboro"
+            android:paddingBottom="2dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+        android:background="@color/Gainsboro"/>
+    
+    <RelativeLayout
+        android:id="@+id/view_putao_hint"
+	    android:layout_width="match_parent"
+	    android:layout_height="150dp"
+	    android:clickable="false"
+	    android:background="@color/white"
+	    android:padding="5dp"
+	    android:gravity="center_vertical|center_horizontal">
+	    <TextView       
+	       android:layout_width="match_parent"
+	       android:layout_height="match_parent"
+	       android:text="@string/comment_nohint"
+	       android:textColor="@color/Gainsboro"
+	       android:gravity="center_horizontal|center_vertical" />
+	</RelativeLayout>
+  
+</LinearLayout>

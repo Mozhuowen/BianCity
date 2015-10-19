@@ -1,0 +1,293 @@
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/basecolor"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:background="@color/white" >
+    
+	    <RelativeLayout
+	        android:id="@+id/fragment_setting_mypage"
+	        android:layout_width="match_parent"
+	        android:layout_height="52dp"
+	        android:background="@color/white_item_selector_linearlayout_bg"
+	        android:layout_marginTop="10dp"
+	        android:orientation="vertical"
+	        android:clickable="true"
+	        android:padding="5dp" >
+	        
+	       <!-- 头像 -->
+	    <de.hdodenhof.circleimageview.CircleImageView
+	            xmlns:app="http://schemas.android.com/apk/res-auto"
+	            android:id="@+id/fragment_setting_usercover"
+	            android:layout_alignParentLeft="true"
+				android:layout_width="42dp"
+				android:layout_height="42dp"
+				app:border_width="0dp" />
+	    
+	    <TextView
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_toRightOf="@id/fragment_setting_usercover"
+	        android:paddingLeft="5dp"
+	        android:textStyle="bold"
+	        android:textColor="@color/grey_light"
+	        android:text="@string/open_mypage"
+	        android:drawableRight="@drawable/ic_detail_small"
+	        android:gravity="center_vertical" />
+	    </RelativeLayout> 
+	    <View
+	        android:layout_width="match_parent"
+	        android:layout_height="1px"
+	        android:background="@color/Gainsboro" />
+        <LinearLayout
+            android:id="@+id/fragment_setting_mytowns"
+            android:layout_width="match_parent"
+            android:background="@color/white_item_selector_linearlayout_bg"
+            android:layout_height="46dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/iconfont_town_64"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_weight="1"
+                android:paddingLeft="9dp"
+                android:paddingTop="2dp"
+                android:paddingRight="2dp"
+                android:paddingBottom="2dp"
+                android:textStyle="bold"
+                android:text="@string/mycity"
+                android:textColor="@color/grey_light"
+                android:gravity="center_vertical"
+                android:drawablePadding="7dp"
+                android:drawableRight="@drawable/ic_detail_small" />
+        </LinearLayout>
+	    <View
+	        android:layout_width="match_parent"
+	        android:layout_height="1px"
+	        android:background="@color/Gainsboro" />
+        <LinearLayout
+            android:id="@+id/fragment_setting_editprofile"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@color/white_item_selector_linearlayout_bg">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/iconfont_editprofile"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:paddingLeft="9dp"
+                android:paddingTop="2dp"
+                android:paddingRight="2dp"
+                android:paddingBottom="2dp"
+                android:textStyle="bold"
+                android:text="@string/edit_profile"
+                android:textColor="@color/grey_light"
+                android:gravity="center_vertical"
+                android:drawablePadding="7dp"
+                android:drawableRight="@drawable/ic_detail_small" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:background="@color/white" >
+        <LinearLayout
+            android:id="@+id/fragment_setting_subcribe"
+            android:background="@color/white_item_selector_linearlayout_bg"
+            android:layout_width="match_parent"
+            android:layout_height="46dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/iconfont_subcribe"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:paddingLeft="9dp"
+                android:paddingTop="2dp"
+                android:paddingRight="2dp"
+                android:paddingBottom="2dp"
+                android:textStyle="bold"
+                android:text="@string/subscribe"
+                android:textColor="@color/grey_light"
+                android:gravity="center_vertical"
+                android:drawablePadding="7dp"
+                android:drawableRight="@drawable/ic_detail_small" />
+            </LinearLayout>
+        <View
+	        android:layout_width="match_parent"
+	        android:layout_height="1px"
+	        android:background="@color/Gainsboro" />
+        <LinearLayout
+            android:id="@+id/fragment_setting_favorite"
+            android:background="@color/white_item_selector_linearlayout_bg"
+            android:layout_width="match_parent"
+            android:layout_height="46dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/iconfont_favorite"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:paddingLeft="9dp"
+                android:paddingTop="2dp"
+                android:paddingRight="2dp"
+                android:paddingBottom="2dp"
+                android:textStyle="bold"
+                android:text="@string/favorite"
+                android:textColor="@color/grey_light"
+                android:gravity="center_vertical"
+                android:drawablePadding="7dp"
+                android:drawableRight="@drawable/ic_detail_small" />
+            </LinearLayout>
+        <View
+	        android:layout_width="match_parent"
+	        android:layout_height="1px"
+	        android:background="@color/Gainsboro" />
+        <LinearLayout
+            android:id="@+id/fragment_setting_community"
+            android:background="@color/white_item_selector_linearlayout_bg"
+            android:layout_width="match_parent"
+            android:layout_height="46dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/iconfont_community"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:paddingLeft="9dp"
+                android:paddingTop="2dp"
+                android:paddingRight="2dp"
+                android:paddingBottom="2dp"
+                android:textStyle="bold"
+                android:text="@string/community"
+                android:textColor="@color/grey_light"
+                android:gravity="center_vertical"
+                android:drawablePadding="7dp"
+                android:drawableRight="@drawable/ic_detail_small" />
+            </LinearLayout>
+
+     </LinearLayout>
+     
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:background="@color/white" >
+        <TextView
+            android:id="@+id/fragment_setting_exit"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@color/white_item_selector_linearlayout_bg"
+            android:textStyle="bold"
+            android:text="退出登录"
+            android:textColor="@color/grey_light"
+            android:gravity="center_vertical"
+            android:padding="2dp"
+            android:drawableRight="@drawable/ic_detail_small" />
+        <View
+	        android:layout_width="match_parent"
+	        android:layout_height="1px"
+	        android:background="@color/Gainsboro" />
+        <TextView
+            android:id="@+id/fragment_setting_draftbox"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@color/white_item_selector_linearlayout_bg"
+            android:clickable="true"
+            android:textStyle="bold"
+            android:text="草稿箱"
+            android:textColor="@color/grey_light"
+            android:gravity="center_vertical"
+            android:padding="2dp"
+            android:drawableRight="@drawable/ic_detail_small" />
+        <View
+	        android:layout_width="match_parent"
+	        android:layout_height="1px"
+	        android:background="@color/Gainsboro" />
+        <TextView
+            android:id="@+id/fragment_setting_checkupdate"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@color/white_item_selector_linearlayout_bg"
+            android:clickable="true"
+            android:textStyle="bold"
+            android:text="检查更新"
+            android:textColor="@color/grey_light"
+            android:gravity="center_vertical"
+            android:padding="2dp"
+            android:drawableRight="@drawable/ic_detail_small" />
+        <View
+	        android:layout_width="match_parent"
+	        android:layout_height="1px"
+	        android:background="@color/Gainsboro" />
+        <TextView
+            android:id="@+id/fragment_setting_about"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@color/white_item_selector_linearlayout_bg"
+            android:clickable="true"
+            android:textStyle="bold"
+            android:text="@string/actionbar_about"
+            android:textColor="@color/grey_light"
+            android:gravity="center_vertical"
+            android:padding="2dp"
+            android:drawableRight="@drawable/ic_detail_small" />
+        <View
+	        android:layout_width="match_parent"
+	        android:layout_height="1px"
+	        android:background="@color/Gainsboro" />
+        
+        <TextView
+            android:id="@+id/fragment_setting_faq"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="@color/white_item_selector_linearlayout_bg"
+            android:clickable="true"
+            android:textStyle="bold"
+            android:text="常见问题"
+            android:textColor="@color/grey_light"
+            android:gravity="center_vertical"
+            android:padding="2dp"
+            android:drawableRight="@drawable/ic_detail_small" />
+    </LinearLayout>
+    
+</LinearLayout>
+
+</ScrollView>

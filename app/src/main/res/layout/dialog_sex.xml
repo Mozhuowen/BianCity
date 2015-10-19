@@ -1,0 +1,37 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|center_horizontal" >
+	    <TextView 
+	        android:id="@+id/dialog_sex_male"
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:gravity="center_vertical|center_horizontal"
+	        android:padding="10dp"
+	        android:text="男"
+	        android:textSize="15sp"
+	        />
+	   <View
+	        android:layout_width="1px"
+	        android:layout_height="match_parent"
+	        android:background="@color/divider_default"
+	        android:layout_marginTop="3dp"
+	        android:layout_marginBottom="3dp" />
+	    <TextView 
+	        android:id="@+id/dialog_sex_female"
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        android:gravity="center_vertical|center_horizontal"
+	        android:padding="10dp"
+	        android:textSize="15sp"
+	        android:text="女" />
+    </LinearLayout>
+</LinearLayout>

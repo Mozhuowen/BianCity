@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/basecolor"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    android:layout_height="match_parent" >
+    <!-- <FrameLayout
+        android:id="@+id/activity_community_titlebar" 
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@color/basecolor"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:onClick="backEvent"
+            android:src="@drawable/ic_navigation_back_normal" />
+        <TextView 
+            android:id="@+id/activity_community_titletext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="社区"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/grey_light"
+            android:layout_gravity="center_horizontal|center_vertical" 
+            />
+        <ImageView
+            android:id="@+id/activity_community_write"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="center_vertical|right"
+            android:src="@drawable/icon_community_write" />
+    </FrameLayout> -->
+    
+    <TextView
+        android:id="@+id/activity_community_texthint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/grey_light"
+        android:visibility="gone"
+        android:text="正在加载..."
+        android:gravity="center_vertical|center_horizontal" />
+       
+    <me.maxwin.view.XListView
+        android:id="@+id/activity_community_xlist"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:layout_below="@id/activity_community_texthint"
+        android:divider="@null"
+        android:cacheColorHint="@color/basecolor">
+    </me.maxwin.view.XListView>
+    
+</RelativeLayout>

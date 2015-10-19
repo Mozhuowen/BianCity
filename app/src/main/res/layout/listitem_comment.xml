@@ -1,0 +1,101 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+	<LinearLayout 
+	    android:id="@+id/listitem_comment_cicon"
+	     android:layout_width="match_parent"
+	     android:layout_height="wrap_content"
+	     android:layout_marginTop="5dp"
+	     android:padding="10dp"
+	     android:background="#fff"
+	     android:gravity="center_horizontal"
+	     android:orientation="horizontal">
+	 <!-- 头像 -->
+     <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/listitem_comment_image"
+			android:layout_width="42dp"
+			android:layout_height="42dp"
+			app:border_width="0dp" />
+     <!-- 右边大部 -->
+     <LinearLayout 
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:orientation="vertical" >
+     <!-- 右边内容区上面 -->    
+     <LinearLayout 
+         android:layout_width="match_parent"
+         android:layout_height="52dp"
+         android:layout_weight="1"
+         android:orientation="vertical"
+         android:padding="5dp" >
+         <!-- 第一层 -->
+         <RelativeLayout 
+             android:layout_width="match_parent"
+	          android:layout_height="wrap_content"
+             >
+             <!-- 昵称 -->
+             <TextView 
+                 android:id="@+id/listitem_comment_username"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentLeft="true"
+                 android:textStyle="bold"
+                 android:textColor="@color/grey_light"
+                 android:text="awen"
+                 android:textSize="10sp" />
+
+              <LinearLayout 
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentRight="true"
+                 android:orientation="horizontal"
+                 android:gravity="center_horizontal|center_vertical"
+                 >
+                 <!-- 点赞 -->
+	             <TextView
+	                android:id="@+id/listitem_comment_good"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="center_vertical"
+		            android:gravity="center_vertical"
+		             android:textColor="@color/grey_light"
+		            android:text="0" />
+	              <ImageView
+	                  android:id="@+id/listitem_comment_good_image"
+	                  android:layout_width="23dp"
+	                  android:layout_height="23dp"
+	                  android:src="@drawable/ic_list_thumb" />
+             </LinearLayout>
+         </RelativeLayout>
+         <!-- 第二层 -->
+         <RelativeLayout 
+             android:layout_width="match_parent"
+	          android:layout_height="wrap_content"
+             >
+             <!-- 发布时间 -->
+             <TextView 
+                 android:id="@+id/listitem_comment_date"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentLeft="true"
+                  android:textColor="@color/grey_light"
+                 android:text="2015-1-1 15:00"
+                 android:textSize="10sp" />
+             
+         </RelativeLayout>
+         
+     </LinearLayout>
+     <TextView 
+        android:id="@+id/listitem_comment_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000" 
+        android:text="@string/test_string" />
+     </LinearLayout><!-- 右大边结束 -->
+   </LinearLayout><!-- 中间主要内容结束 -->
+   
+ </LinearLayout>

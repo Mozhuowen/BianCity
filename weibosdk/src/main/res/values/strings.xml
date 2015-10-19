@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">WeiboSDK</string>
+    <string name="com_sina_weibo_sdk_login_with_weibo_account">用微博登录</string>
+    <string name="com_sina_weibo_sdk_login">登录</string>
+    <string name="com_sina_weibo_sdk_logout">注销</string>
+</resources>

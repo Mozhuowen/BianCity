@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_hot_mainlayout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/basecolor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:orientation="vertical" 
+    tools:context="com.putaotown.MainActivity">
+    <!-- <FrameLayout
+        android:id="@+id/fragment_hot_titlebar" 
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/fb_blue"
+        >
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#82858b"
+            android:layout_gravity="center_vertical"
+            />
+        <TextView 
+            android:id="@+id/fragment_hot_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hot_title"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/grey_light"
+            android:layout_gravity="center_horizontal|center_vertical" 
+            />
+        <ImageView
+            android:id="@+id/fragment_hot_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="20dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/icon_titlebar_search" />
+    </FrameLayout> -->
+
+    
+    <me.maxwin.view.XListView
+        android:id="@+id/fragment_hot_listv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:visibility="gone"
+        android:divider="@null"
+        android:cacheColorHint="@color/white">
+    </me.maxwin.view.XListView>
+	<TextView
+	    android:id="@+id/fragment_hot_texthint"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:text="@string/xlistview_header_hint_loading"
+	    android:background="@color/white"
+	    android:textColor="@color/Gainsboro"
+	    android:gravity="center_vertical|center_horizontal" />
+
+
+</LinearLayout>

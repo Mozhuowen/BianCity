@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    android:orientation="vertical" >
+
+    <!-- 评论编写区 -->
+
+    <RelativeLayout
+        android:id="@+id/activity_putaox_commentedit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#fff3f3f3"
+        android:visibility="gone"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/activity_putaox_submitcomment"
+            android:layout_width="60dp"
+            android:layout_height="36dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@color/corner_selector"
+            android:clickable="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="评论" />
+
+        <EditText
+            android:id="@+id/activity_putaox_commentcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="36dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/activity_putaox_submitcomment"
+            android:background="@drawable/corners_bg"
+            android:hint="  说点什么吧"
+            android:paddingLeft="10dp"
+            android:singleLine="true" >
+        </EditText>
+    </RelativeLayout>
+    
+    <me.maxwin.view.XListView
+       android:id="@+id/activity_putaox_xlistview"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"      
+       android:layout_above="@id/activity_putaox_commentedit"
+       android:background="@color/white"	        
+       android:divider="@null">
+   </me.maxwin.view.XListView>
+
+</RelativeLayout>
